@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zsp.student.mapping.LeftTreeMapping">
+    <resultMap id="selecttree" type="com.zsp.student.entity.StuRolPopovo">
+        <id property="slId" column="sl_id"></id>
+        <result property="slUsername" column="sl_username"></result>
+        <result property="slPassword" column="sl_password"></result>
+        <result property="slZhuanye" column="sl_zhuanye"></result>
+        <result property="slXueyuan" column="sl_xueyuan"></result>
+        <result property="slClass" column="sl_class"></result>
+        <result property="sImg" column="sl_img"></result>
+        <result property="sNicheng" column="sl_nicheng"></result>
+        <result property="sId" column="s_id"></result>
+        <result property="sXingqu" column="sl_xingqu"></result>
+        <result property="slPhone" column="sl_phone"></result>
+        <association property="roal" javaType="com.zsp.student.entity.Roal" >
+            <id property="rId" column="r_id"></id>
+            <result property="rName" column="r_name"></result>
+        </association>
+        <association property="power" javaType="com.zsp.student.entity.Power">
+            <id property="pId" column="p_id"></id>
+            <result property="pName" column="p_name"></result>
+            <result property="pFtherid" column="p_ftherid"></result>
+            <result property="pUrl" column="p_url"></result>
+            <result property="pHtml" column="p_html"></result>
+            <result property="pSort" column="p_sort"></result>
+            <result property="pIcon" column="p_icon"></result>
+            <result property="pType" column="p_type"></result>
+            <result property="pSpread" column="p_spread"></result>
+        </association>
+    </resultMap>
+    <select id="SelectPowerByUsername" parameterType="com.zsp.student.entity.StuRolPopovo" resultMap="selecttree">
+/*        --查询登录的用户有哪些权限*/
+        SELECT `power`.*  FROM `power`,`roal`,`role_power`,role_studentlogin,tb_studentlogin
+        WHERE `power`.p_id=`role_power`.p_id AND `role_power`.r_id=`roal`.r_id AND `roal`.r_id=role_studentlogin.r_id
+        AND role_studentlogin.sl_id=tb_studentlogin.sl_id
+        AND tb_studentlogin.sl_username=#{slUsername}
+        ORDER BY `power`.p_sort ASC
+    </select>
+</mapper>

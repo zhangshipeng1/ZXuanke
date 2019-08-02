@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zsp.student.mapping.TbStudentloginMapping">
+   <resultMap id="selectStudentMessage" type="com.zsp.student.entity.StudentMessagepovo">
+       <id column="sl_id" property="slId"></id>
+       <result column="sl_username" property="slUsername"></result>
+       <result column="sl_password" property="slPassword"></result>
+       <result column="sl_zhuanye" property="slZhuanye"></result>
+       <result column="sl_xueyuan" property="slXueyuan"></result>
+       <result column="sl_class" property="slClass"></result>
+       <result column="s_id" property="sId"></result>
+       <result column="sl_img" property="slImg"></result>
+       <result column="sl_nicheng" property="slNicheng"></result>
+       <result column="sl_xingqu" property="slXingqu"></result>
+       <result column="sl_phone" property="slPhone"></result>
+       <result column="sl_email" property="slEmail"></result>
+       <result column="sl_pingjia" property="slPingjia"></result>
+       <result column="add_id" property="addId"></result>
+      <association property="roal" javaType="com.zsp.student.entity.Roal">
+          <id column="r_id" property="rId"></id>
+          <result column="r_name" property="rName"></result>
+      </association>
+       <association property="tbStudent" javaType="com.zsp.student.entity.TbStudent">
+           <id property="sId" column="s_id" ></id>
+           <result property="sNumber" column="s_number"></result>
+           <result property="sName" column="s_name"></result>
+           <result property="sBirthday" column="s_birthday"></result>
+           <result property="sCreattime" column="s_creattime"></result>
+           <result property="sIdcard" column="s_idcard"></result>
+           <result property="sSex" column="s_sex"></result>
+           <result property="sAddress" column="s_address"></result>
+           <result property="sPhonenumber" column="s_phonenumber"></result>
+           <result property="sFathername" column="s_fathername"></result>
+           <result property="sMonthername" column="s_monthername"></result>
+           <result property="sFnumber" column="s_fnumber"></result>
+           <result property="sMnumber" column="s_mnumber"></result>
+       </association>
+
+       <association property="tbClass" javaType="com.zsp.student.entity.TbClass">
+           <id property="class_id" column="classId"></id>
+           <result column="class_name" property="className"></result>
+           <result column="class_renshu" property="classRenshu"></result>
+           <result column="major_id" property="majorId"></result>
+       </association>
+       <association property="tbMajor" javaType="com.zsp.student.entity.TbMajor">
+           <id property="major_id" column="majorId"></id>
+           <result column="major_name" property="majorName"></result>
+           <result column="college_id" property="collegeId"></result>
+       </association>
+       <association property="college" javaType="com.zsp.student.entity.College">
+           <id property="college_id" column="collegeId"></id>
+           <result column="college_name" property="collegeName"></result>
+       </association>
+   </resultMap>
+    <select id="selectByUsername" resultType="com.zsp.student.entity.TbStudentlogin" parameterType="java.lang.String">
+        select *from tb_studentlogin where sl_username=#{param_1}
+    </select>
+    <update id="updateStudentimg" parameterType="java.lang.String">
+        update  tb_studentlogin set sl_img=#{slImg}
+    </update>
+    <select id="selectStudentmessage" parameterType="java.lang.String" resultMap="selectStudentMessage">
+        SELECT *FROM tb_studentlogin,roal,tb_student,role_studentlogin,tb_major,tb_class,college
+        WHERE `tb_studentlogin`.s_id=tb_student.s_id
+        AND tb_studentlogin.sl_id=role_studentlogin.sl_id AND roal.r_id=role_studentlogin.r_id
+        and tb_class.class_id=tb_studentlogin.sl_class and tb_major.major_id=tb_studentlogin.sl_zhuanye
+        and tb_studentlogin.sl_xueyuan=college.college_id
+        AND tb_studentlogin.sl_username=#{slUsername}
+    </select>
+<update id="updatestudentmMessage" parameterType="com.zsp.student.entity.StudentMessagepovo" >
+    update tb_studentlogin
+    <set>
+        <if test="slNicheng!='' and slNicheng!=null">tb_studentlogin.sl_nicheng=#{slNicheng},</if>
+        <if test="slPhone!='' and slPhone!=null"> tb_studentlogin.sl_phone=#{slPhone},</if>
+        <if test="slXingqu!='' and slXingqu!=null">tb_studentlogin.sl_xingqu=#{slXingqu},</if>
+        <if test="slEmail!='' and slEmail!=null">tb_studentlogin.sl_email=#{slEmail},</if>
+        <if test="slPingjia!='' and slPingjia!=null">tb_studentlogin.sl_pingjia=#{slPingjia},</if>
+        <if test="">tb_studentlogin.sl_xueyuan=#{slXueyuan},</if>
+        <if test="">tb_studentlogin.sl_zhuanye=#{slZhuanye},</if>
+        <if test="">tb_studentlogin.sl_class=#{slClass},</if>
+
+    </set>
+    where  tb_studentlogin.sl_username=#{slUsername}
+    </update>
+    <select id="selectAllcolage" resultType="com.zsp.student.entity.Collegepovo">
+        select *from college
+    </select>
+    <select id="selectmajorByid" resultType="com.zsp.student.entity.TbMajorpovo" parameterType="java.lang.String">
+         SELECT *FROM tb_major,college WHERE college.college_id=tb_major.college_id
+         and college.college_id=#{collegeId}
+    </select>
+    <select id="selectclassesByid" resultType="com.zsp.student.entity.TbClasspovo" parameterType="java.lang.String">
+         SELECT *FROM tb_class,tb_major WHERE tb_class.major_id=tb_major.major_id
+         and tb_major.major_id=#{majorId}
+    </select>
+</mapper>
