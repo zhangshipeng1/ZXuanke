@@ -106,7 +106,7 @@
     <bean id="ShiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
         <property name="loginUrl" value="/page/login/login.html"/>
-        <property name="successUrl" value="/index.html"/>
+        <property name="successUrl" value="/page/login/role.html"/>
         <property name="unauthorizedUrl" value="/unauthorized.jsp"/><!-- 没有权限的页面 -->
         <!-- The 'filters' property is not necessary since any declared javax.servlet.Filter bean
              defined will be automatically acquired and available via its beanName in chain
@@ -120,6 +120,7 @@
         <property name="filterChainDefinitions">
             <value>
                 /page/login/login.html = anon
+                /page/login/role.html=anon
                 /student/dologin.action=anon
                 /student/getuserimg.action=anon
                 /student/code.action=anon

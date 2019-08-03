@@ -28,7 +28,7 @@ layui.use(['form','layer','jquery'],function(){
                     layer.load();
                     if(data=='true'){
                         layer.msg('hello');
-                        window.location.href = "../main/index.html";
+                        window.location.href = "role.html";
 
                     }else{
                         setTimeout(function(){
