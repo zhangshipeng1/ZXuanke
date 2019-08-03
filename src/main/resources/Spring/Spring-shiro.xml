@@ -120,7 +120,7 @@
         <property name="filterChainDefinitions">
             <value>
                 /page/login/login.html = anon
-                /page/login/role.html=anon
+
                 /student/dologin.action=anon
                 /student/getuserimg.action=anon
                 /student/code.action=anon

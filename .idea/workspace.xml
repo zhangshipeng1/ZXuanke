@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f6f8a3-7871-404d-a2bc-cedbd2bc7bee" name="Default Changelist" comment="" />
+    <list default="true" id="a4f6f8a3-7871-404d-a2bc-cedbd2bc7bee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Spring/Spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Spring/Spring-shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/login/role.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/login/role.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/Spring/Spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/Spring/Spring-shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/login/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/user/userInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/user/userInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Spring/Spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Spring/Spring-shiro.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,19 +78,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/TbStudentloginMapping.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+            <state relative-caret-position="217">
+              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/login.js">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Spring/Spring-shiro.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="3" selection-end-column="25" />
+            <state relative-caret-position="-116">
+              <caret line="122" selection-start-line="122" selection-end-line="122" />
             </state>
           </provider>
         </entry>
@@ -106,56 +114,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/StudentMessagepovo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#552#553#0" expanded="true" />
-                <element signature="e#587#588#0" expanded="true" />
-                <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-                <element signature="e#702#703#0" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#814#815#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Roal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/user/userInfo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="164" column="19" selection-start-line="164" selection-start-column="19" selection-end-line="164" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/page/user/userInfo.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -164,11 +122,50 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/role.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            <state relative-caret-position="213">
+              <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/role.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/role/mapping/RoleMapping.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/role/mapping/RoleMapping.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/main/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2160">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#span#0;n#p#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,8 +177,9 @@
       <list>
         <option value="HTML File" />
         <option value="Interface" />
-        <option value="mybatise-xml" />
         <option value="Kotlin File" />
+        <option value="FxmlFile" />
+        <option value="mybatise-xml" />
         <option value="Class" />
       </list>
     </option>
@@ -220,9 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/page/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/regist/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/util/CodeUtil.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/regist/regist.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbStudentloginpovo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Roal.java" />
@@ -246,7 +241,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/Spring/SpringMVC.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsp/UpandDown/controler/UpLond.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/login/login.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/Spring/Spring-shiro.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/main/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbAddress.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbStudent.java" />
@@ -269,8 +263,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/StudentServiceimpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/TbStudentloginMapping.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/user/userInfo.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/login/login.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/user/userInfo.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/login/login.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/Spring/Spring-shiro.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/login/role.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/login/role.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/role/mapping/RoleMapping.java" />
       </list>
     </option>
   </component>
@@ -352,6 +350,27 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="zsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zsp" type="462c0819:PsiDirectoryNode" />
+              <item name="role" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zsp" type="462c0819:PsiDirectoryNode" />
+              <item name="role" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
@@ -487,6 +506,27 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="zsp" type="462c0819:PsiDirectoryNode" />
+              <item name="role" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zsp" type="462c0819:PsiDirectoryNode" />
+              <item name="role" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zsp" type="462c0819:PsiDirectoryNode" />
               <item name="student" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -582,7 +622,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/webapp/layui/lay" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/page/login" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -593,11 +633,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA-project\ZXuanke\src\main\webapp\page\login" />
+      <recent name="D:\IDEA-project\ZXuanke\src\main\webapp\page" />
       <recent name="D:\IDEA-project\ZXuanke\src\main\java\com\zsp\student\entity" />
       <recent name="D:\IDEA-project\ZXuanke\src\main\webapp\images" />
       <recent name="D:\IDEA-project\ZXuanke\src\main\webapp\page\main" />
-      <recent name="D:\IDEA-project\ZXuanke\src\main\webapp\page\login" />
-      <recent name="D:\IDEA-project\ZXuanke\src\main\resources\com\zsp\student" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IDEA-project\ZXuanke\src\main\webapp\page\login" />
@@ -767,7 +807,7 @@
       <workItem from="1564184649166" duration="78316000" />
       <workItem from="1564527440270" duration="15653000" />
       <workItem from="1564552217070" duration="123000" />
-      <workItem from="1564552437740" duration="57294000" />
+      <workItem from="1564552437740" duration="63360000" />
     </task>
     <task id="LOCAL-00001" summary="登录，主页修改信息">
       <created>1564713944561</created>
@@ -783,11 +823,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564714875385</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="登录，主页修改信息">
+      <created>1564719035653</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564719035654</updated>
+    </task>
+    <task id="LOCAL-00004" summary="登录，主页修改信息">
+      <created>1564795287900</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564795287900</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336526000" />
+    <option name="totallyTimeSpent" value="342592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -799,21 +853,21 @@
       <window_info id="Image Layers" order="3" />
       <window_info id="Web" order="4" sideWeight="0.5008518" side_tool="true" weight="0.22692889" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49914822" weight="0.28441754" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49914822" visible="true" weight="0.28441754" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32956687" />
       <window_info anchor="bottom" id="Spring" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32879046" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32764506" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50075644" side_tool="true" weight="0.6006826" />
-      <window_info anchor="bottom" id="Messages" order="5" sideWeight="0.49924356" visible="true" weight="0.1672355" />
+      <window_info anchor="bottom" id="Messages" order="5" sideWeight="0.49924356" weight="0.1672355" />
       <window_info anchor="bottom" id="Java Enterprise" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Application Servers" order="9" weight="0.32956687" />
       <window_info anchor="bottom" id="Message" order="10" />
       <window_info anchor="bottom" id="Find" order="11" weight="0.32879046" />
-      <window_info anchor="bottom" id="Run" order="12" weight="0.17064847" />
+      <window_info anchor="bottom" id="Run" order="12" visible="true" weight="0.1331058" />
       <window_info anchor="bottom" id="Debug" order="13" weight="0.39863715" />
       <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
@@ -878,35 +932,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/userface5.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/cache.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2352">
-          <caret line="110" column="7" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/images/0.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Spring/Spring-shiro.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-587">
-          <caret line="44" column="24" lean-forward="true" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/controler/TestControler.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1099,16 +1129,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/main/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="976">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#span#0;n#p#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbMajor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1233,13 +1253,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/layuicms2.0/js/main.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1250,10 +1263,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Spring/Spring-shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/main/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#span#0;n#p#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/role.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="213">
+          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/role.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/role/mapping/RoleMapping.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/role/mapping/RoleMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>

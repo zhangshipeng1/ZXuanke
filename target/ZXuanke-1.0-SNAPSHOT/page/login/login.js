@@ -24,14 +24,16 @@ layui.use(['form','layer','jquery'],function(){
                 data:data1,
                 success: function (data) {
 
-                    alert(data);
+
                     layer.load();
                     if(data=='true'){
                         layer.msg('hello');
-                        window.location.href = "../main/index.html";
+                        window.location.href = "role.html";
 
                     }else{
+                        setTimeout(function(){
                         layer.msg(data, {icon: 2});
+                        },2000);
                     }
                 }
             });
