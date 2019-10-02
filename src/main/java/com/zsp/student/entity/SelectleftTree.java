@@ -9,14 +9,14 @@ package com.zsp.student.entity;
  */
 public class SelectleftTree {
     private Roal roal;
-    private TbStudentloginpovo tbStudentloginpovo;
+    private TbUserloginpovo tbUserloginpovo;
     private Power power;
 
     @Override
     public String toString() {
         return "SelectleftTree{" +
                 "roal=" + roal +
-                ", tbStudentloginpovo=" + tbStudentloginpovo +
+                ", tbUserloginpovo=" + tbUserloginpovo +
                 ", power=" + power +
                 '}';
     }
@@ -24,9 +24,9 @@ public class SelectleftTree {
     public SelectleftTree() {
     }
 
-    public SelectleftTree(Roal roal, TbStudentloginpovo tbStudentloginpovo, Power power) {
+    public SelectleftTree(Roal roal, TbUserloginpovo tbUserloginpovo, Power power) {
         this.roal = roal;
-        this.tbStudentloginpovo = tbStudentloginpovo;
+        this.tbUserloginpovo = tbUserloginpovo;
         this.power = power;
     }
 
@@ -38,12 +38,12 @@ public class SelectleftTree {
         this.roal = roal;
     }
 
-    public TbStudentloginpovo getTbStudentloginpovo() {
-        return tbStudentloginpovo;
+    public TbUserloginpovo getTbUserloginpovo() {
+        return tbUserloginpovo;
     }
 
-    public void setTbStudentloginpovo(TbStudentloginpovo tbStudentloginpovo) {
-        this.tbStudentloginpovo = tbStudentloginpovo;
+    public void setTbUserloginpovo(TbUserloginpovo tbUserloginpovo) {
+        this.tbUserloginpovo = tbUserloginpovo;
     }
 
     public Power getPower() {

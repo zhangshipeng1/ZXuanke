@@ -1,14 +1,11 @@
 package com.zsp.student.serviceimpl;
 
-import com.zsp.student.entity.TbStudentlogin;
-import com.zsp.student.entity.TbStudentloginpovo;
+import com.zsp.student.entity.TbUserloginpovo;
 import com.zsp.student.mapping.TbStudentloginMapping;
 import com.zsp.student.service.LoginService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpSession;
 
 /**
  * @PackageName:com.zsp.student.serviceimpl
@@ -23,9 +20,9 @@ public class LoginServiceimpl implements LoginService {
     private TbStudentloginMapping tbStudentloginMapping;
     //Student 登录业务false 代表存在用户，true代表不存在；
     @Override
-    public TbStudentlogin StudentLogin(String username) {
+    public TbUserloginpovo userLogin(String username) {
 
-        TbStudentlogin tbStudentlogin=tbStudentloginMapping.selectByUsername (username);
+        TbUserloginpovo tbUserloginpovo=tbStudentloginMapping.selectByUsername (username);
 
         return tbStudentloginMapping.selectByUsername (username);
 

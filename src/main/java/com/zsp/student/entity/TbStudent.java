@@ -5,8 +5,8 @@ import java.sql.Date;
 
 public class TbStudent {
 
-  private long sId;
-  private long sNumber;
+  private Long sId;
+  private Long sNumber;
   private String sName;
   private Date sBirthday;
   private Date sCreattime;
@@ -42,7 +42,7 @@ public class TbStudent {
   public TbStudent() {
   }
 
-  public TbStudent(long sId, long sNumber, String sName, Date sBirthday, Date sCreattime, String sIdcard, String sSex, String sAddress, String sPhonenumber, String sFathername, String sMonthername, String sFnumber, String sMnumber) {
+  public TbStudent(Long sId, Long sNumber, String sName, Date sBirthday, Date sCreattime, String sIdcard, String sSex, String sAddress, String sPhonenumber, String sFathername, String sMonthername, String sFnumber, String sMnumber) {
     this.sId = sId;
     this.sNumber = sNumber;
     this.sName = sName;
@@ -58,20 +58,20 @@ public class TbStudent {
     this.sMnumber = sMnumber;
   }
 
-  public long getSId() {
+  public Long getSId() {
     return sId;
   }
 
-  public void setSId(long sId) {
+  public void setSId(Long sId) {
     this.sId = sId;
   }
 
 
-  public long getSNumber() {
+  public Long getSNumber() {
     return sNumber;
   }
 
-  public void setSNumber(long sNumber) {
+  public void setSNumber(Long sNumber) {
     this.sNumber = sNumber;
   }
 

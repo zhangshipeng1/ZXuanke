@@ -3,15 +3,15 @@ package com.zsp.student.entity;
 
 public class College {
 
-  private long collegeId;
-  private String collegeName;
+  private Long collegeId;
+  private String collegeName=null;
 
 
-  public long getCollegeId() {
+  public Long getCollegeId() {
     return collegeId;
   }
 
-  public void setCollegeId(long collegeId) {
+  public void setCollegeId(Long collegeId) {
     this.collegeId = collegeId;
   }
 

@@ -3,17 +3,17 @@ package com.zsp.student.entity;
 
 public class TbClass {
 
-  private long classId;
-  private String className;
-  private long classRenshu;
-  private long majorId;
+  private Long classId;
+  private String className=null;
+  private Long classRenshu;
+  private Long majorId;
 
 
-  public long getClassId() {
+  public Long getClassId() {
     return classId;
   }
 
-  public void setClassId(long classId) {
+  public void setClassId(Long classId) {
     this.classId = classId;
   }
 
@@ -27,20 +27,20 @@ public class TbClass {
   }
 
 
-  public long getClassRenshu() {
+  public Long getClassRenshu() {
     return classRenshu;
   }
 
-  public void setClassRenshu(long classRenshu) {
+  public void setClassRenshu(Long classRenshu) {
     this.classRenshu = classRenshu;
   }
 
 
-  public long getMajorId() {
+  public Long getMajorId() {
     return majorId;
   }
 
-  public void setMajorId(long majorId) {
+  public void setMajorId(Long majorId) {
     this.majorId = majorId;
   }
 

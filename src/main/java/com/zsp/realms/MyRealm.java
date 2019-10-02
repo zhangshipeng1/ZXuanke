@@ -1,15 +1,14 @@
 package com.zsp.realms;
 
-import com.zsp.student.entity.TbStudentlogin;
-import com.zsp.student.entity.TbStudentloginpovo;
+import com.zsp.student.entity.TbUserloginpovo;
 import com.zsp.student.service.LoginService;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -35,18 +34,22 @@ public class MyRealm extends AuthorizingRealm {
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         UsernamePasswordToken token1= (UsernamePasswordToken) token;
         String username=token1.getUsername ();
+        AuthenticationInfo info=null;
+        TbUserloginpovo tbUserloginpovo=loginService.userLogin (username);
+        ByteSource salt=ByteSource.Util.bytes(tbUserloginpovo.getSlUsername ()+tbUserloginpovo.getSlId ());
+        SecurityUtils.getSubject ().getSession ().setAttribute ("user",tbUserloginpovo);
+        SimpleHash sh=new SimpleHash("MD5", token1.getPassword (), salt, 1024);
+        if(tbUserloginpovo!=null && token1.getPassword ()!=null && tbUserloginpovo.getSlPassword ().toString ().equals (sh.toString ())){
+            System.out.println("testpsss");
+         info=new SimpleAuthenticationInfo (tbUserloginpovo.getSlUsername (),tbUserloginpovo.getSlPassword (),salt,getName ());
 
-        TbStudentlogin tbStudentlogin=loginService.StudentLogin (username);
-        System.out.println(username);
-        System.out.println(tbStudentlogin);
-        ByteSource salt=ByteSource.Util.bytes(username);
-        AuthenticationInfo info=new SimpleAuthenticationInfo (username,tbStudentlogin.getSlPassword (),salt,getName ());
+       }
         return info;
     }
 //产生加密的值
     public static void main(String[] args) {
 
-        ByteSource salt=ByteSource.Util.bytes("1");
+        ByteSource salt=ByteSource.Util.bytes("2"+"1002");
 
         SimpleHash sh=new SimpleHash("MD5", "1", salt, 1024);
         System.out.println(sh);

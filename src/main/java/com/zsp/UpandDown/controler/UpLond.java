@@ -40,8 +40,8 @@ System.out.println("ssssup");
         String  type=filename.substring (filename.lastIndexOf (".")+1);
         Date date=new Date ();
         SimpleDateFormat simpleDateFormat=new SimpleDateFormat ("yyyy-MM-dd@HH-mm-ss");
-        String date1=simpleDateFormat.format (date);
-        String path="d:\\Zxuankeimg\\image";
+        String date1=simpleDateFormat.format(date);
+        String path="c:\\Zxuankeimg\\image";
         File makefile=new File (path);
         if((type.length ()+1)!=filename.length ()) {//判断是否“.”之前有值
            if(!makefile.exists ()){

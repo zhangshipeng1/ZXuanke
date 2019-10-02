@@ -12,10 +12,11 @@ layui.use(['bodyTab','form','element','layer','jquery'],function(){
 	var form = layui.form,
 		element = layui.element;
 		$ = layui.$;
+		var role=localStorage.getItem("rId")
     	layer = parent.layer === undefined ? layui.layer : top.layer;
 		tab = layui.bodyTab({
 			openTabNum : "50",  //最大可打开窗口数量
-			url : "../../student/getTree.action?data="+ new Date() + Math.floor(Math.random()*24) //获取菜单json地址
+			url : "../../student/getTree.action?rId="+role //获取菜单json地址
 		});
 		//加载头像
 	$(function () {
@@ -43,7 +44,8 @@ layui.use(['bodyTab','form','element','layer','jquery'],function(){
 
 	});
 
-	//通过顶部菜单获取左侧二三级菜单   注：此处只做演示之用，实际开发中通过接口传参的方式获取导航数据
+	//通过顶部菜单获取左侧二三级菜单
+	// 注：此处只做演示之用，实际开发中通过接口传参的方式获取导航数据
 	function getData(){
 		$.get(tab.tabConfig.url,function(data){
 

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zsp.student.mapping.CourseMapping">
+   <resultMap id="selectCouse" type="com.zsp.student.entity.Coursespovo">
+       <id column="c_id" property="cId"></id>
+       <result column="c_cname" property="cCname"></result>
+       <association property="tbTeacher" javaType="com.zsp.student.entity.TbTeacher">
+           <id column="t_id" property="tId"></id>
+           <result column="t_name" property="tName"></result>
+       </association>
+       <association property="time" javaType="com.zsp.student.entity.Time">
+           <id column="time_id" property="timeId"></id>
+           <result column="time_cart" property="timeCart"></result>
+
+       </association>
+       <association property="teacherCourse" javaType="com.zsp.student.entity.TeacherCourse">
+           <result column="tc_zhuangtai" property="tcZhuangtai"></result>
+       </association>
+       <association property="college" javaType="com.zsp.student.entity.College">
+           <id column="college_id" property="collegeId"></id>
+           <result column="college_name" property="collegeName"></result>
+       </association>
+       <association property="tbMajor" javaType="com.zsp.student.entity.TbMajor">
+           <id column="major_id" property="majorId"></id>
+           <result column="major_name" property="majorName" ></result>
+       </association>
+       <association property="tbXuanke" javaType="com.zsp.student.entity.TbXuanke">
+           <id column="xuan_id" property="xuanId"></id>
+           <result column="xuan_zhuangtai" property="xuanZhuangtai" ></result>
+       </association>
+   </resultMap>
+<sql id="selectCourse" >
+          SELECT tb_course.c_id,tb_xuanke.xuan_zhuangtai,tb_course.c_cname,tb_teacher.t_name,`time`.time_cart,teacher_course.tc_zhuangtai,college.college_name,tb_major.major_name FROM
+      ( tb_course,tb_teacher,teacher_course,`time`,college,tb_major )LEFT JOIN tb_xuanke ON tb_course.c_id=tb_xuanke.xuan_course
+        WHERE tb_course.c_id=teacher_course.c_id AND teacher_course.t_id=tb_teacher.t_id AND teacher_course.tc_time=time.time_id
+        AND tb_course.c_type!='必修'
+        AND tb_major.major_id=tb_course.c_zhuanye
+        AND college.college_id=tb_course.c_xueyuan
+</sql>
+    <select id="selectAllCourse" resultMap="selectCouse">
+       <include refid="selectCourse"></include>
+
+    </select>
+ <!--   <select id="selectCourseByName" resultMap="selectCouse">
+        <bind name="key" value="'%'+key+'%'"/>
+        <include refid="selectCourse"></include>
+        and tb_course.c_cname like #{key}
+    </select>-->
+    <select id="selectCourseBysomeThing" resultMap="selectCouse">
+        <bind name="key" value="'%'+key+'%'"/>
+        <include refid="selectCourse"></include>
+        <if test="cZhuanye != null and cZhuanye != 0">and tb_course.c_zhuanye=#{cZhuanye}</if>
+        <if test="cXueyuan != 0 and cXueyuan != null ">and tb_course.c_xueyuan=#{cXueyuan}</if>
+        <if test="key !='' and key != null ">and tb_course.c_cname like #{key}</if>
+
+    </select>
+</mapper>

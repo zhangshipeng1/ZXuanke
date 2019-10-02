@@ -7,18 +7,15 @@ import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import util.CodeUtil;
-import util.GetCode;
 import util.ImgUtil;
 import util.TreeNodeBuilder;
 
 import javax.annotation.Resource;
 import javax.imageio.ImageIO;
-import javax.jws.WebParam;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -50,7 +47,7 @@ public class StudentControler {
     public String dologin(@RequestParam(value = "username")  String slUsername , @RequestParam(value = "password") String slPassword, String code, @RequestParam(value = "remberme",defaultValue = "false") Boolean remberme , HttpSession session, Model model, HttpServletRequest request, HttpServletResponse response){
          String code1= (String) session.getAttribute ("codedata");
 
-       //  String data2= (String) request.getSession ().getAttribute ("codedata");
+        //  String data2= (String) request.getSession ().getAttribute ("codedata");
         System.out.println(code1+"......."+code);
         if(code1.equalsIgnoreCase (code)){
         Subject subject = SecurityUtils.getSubject();
@@ -75,9 +72,10 @@ public class StudentControler {
         }}
         else {
 
-            return "code roung";
+            return "验证码错误";
         }
     }
+    //生成验证码
     @RequestMapping("/code.action")
     public void code(HttpServletRequest request, Model model,HttpServletResponse resp, HttpSession session){
         CodeUtil codeUtil=new CodeUtil ();
@@ -105,37 +103,47 @@ public class StudentControler {
 
     }
 /*
+*生成左侧列表
 * ajax请求生成json树返回树
 * 1请求路径
 *
 * */
 @RequestMapping("/getTree.action")
     @ResponseBody
-    public List<TreeNode> gettree(String username, HttpSession session){
+    public List<TreeNode> gettree(String username,Integer rId, HttpSession session){
 
     username= (String) SecurityUtils.getSubject ().getPrincipal ();
-
-    StuRolPopovo stuRolPopovo=new StuRolPopovo ();
-    stuRolPopovo.setSlUsername (username);
-       List<TreeNode> treeNodes= studentService.selectLefttree (stuRolPopovo);
+System.out.println(rId);
+    UserRolPopovo userRolPopovo=new UserRolPopovo ();
+    userRolPopovo.setSlUsername (username);
+    userRolPopovo.setRoal (new Roal (rId));
+       List<TreeNode> treeNodes= studentService.selectLefttree (userRolPopovo);
 
 
     return TreeNodeBuilder.builder (treeNodes,0);
     }
+
+    /**
+     *获取用户图片
+     * @param session
+     * @param request
+     * @param response
+     * @param slUsername
+     */
     @RequestMapping("/getuserimg.action")
     @ResponseBody
     public void getUserloginmessage(HttpSession session , HttpServletRequest request,HttpServletResponse response,String slUsername ){
-        TbStudentlogin tbStudentlogin=null;
+        TbUserloginpovo tbUserloginpovo=null;
 System.out.println(slUsername);
         if(slUsername!=null){
-            tbStudentlogin=loginService.StudentLogin (slUsername);
+            tbUserloginpovo=loginService.userLogin (slUsername);
 
          }else {
-            tbStudentlogin=loginService.StudentLogin ((String) SecurityUtils.getSubject ().getPrincipal ());
+            tbUserloginpovo=loginService.userLogin ((String) SecurityUtils.getSubject ().getPrincipal ());
 
          }
         BufferedImage img = new BufferedImage(300, 150, BufferedImage.TYPE_INT_RGB);
-        img = ImgUtil.getInputStream(tbStudentlogin.getSlImg ());
+        img = ImgUtil.getInputStream(tbUserloginpovo.getSlImg ());
         if(img==null){
             throw new RuntimeException("打印图片异常：com.controller.Business_Ctrl.getImg(String, HttpServletResponse)");
         }
@@ -147,35 +155,35 @@ System.out.println(slUsername);
                 System.out.println("打印异常:com.controller.Business_Ctrl.getImg(String, HttpServletResponse)");
             }
         }
-       session.setAttribute ("tbStudentlogin",tbStudentlogin);
+       session.setAttribute ("tbuserlogin",tbUserloginpovo);
 
 
     }
     //获取student
     @RequestMapping("/getuser.action")
     @ResponseBody
-    public TbStudentlogin getUserlogin(HttpSession session , HttpServletRequest request,HttpServletResponse response){
+    public TbUserloginpovo getUserlogin(HttpSession session , HttpServletRequest request,HttpServletResponse response){
 
-        return loginService.StudentLogin ((String) SecurityUtils.getSubject ().getPrincipal ());
+        return loginService.userLogin ((String) SecurityUtils.getSubject ().getPrincipal ());
 
     }
     //获取用户信息显示
     @RequestMapping("/getloginmessage.action")
     @ResponseBody
-    public StudentMessagepovo getloginmessage(HttpSession session , HttpServletRequest request,HttpServletResponse response){
+    public UserMessagepovo getloginmessage(HttpSession session , HttpServletRequest request,HttpServletResponse response){
 //不能从session中取值因为请求图片和请求用户在同一时间所以session中值没办法得到。
-       TbStudentlogin tbStudentlogin= (TbStudentlogin) session.getAttribute ("tbStudentlogin");
-       String username=tbStudentlogin.getSlUsername ();
+       TbUserloginpovo tbUserloginpovo= (TbUserloginpovo) session.getAttribute ("user");
+       String username=tbUserloginpovo.getSlUsername ();
        System.out.println("************************"+username);
-       System.out.println(studentService.getStudentMessage (username));
-        return studentService.getStudentMessage (username);
+       System.out.println(studentService.getuserMessage (username));
+        return studentService.getuserMessage (username);
 
     }
-    @RequestMapping("/updateStudentlogMessage.action")
+    @RequestMapping("/updateuserlogMessage.action")
     @ResponseBody
-    public boolean upStudentlogMessage(StudentMessagepovo studentMessagepovo){
-    System.out.println(studentMessagepovo);
-    Boolean res=studentService.updatestudentMessage (studentMessagepovo);
+    public boolean upuserlogMessage(UserMessagepovo userMessagepovo){
+    System.out.println(userMessagepovo);
+    Boolean res=studentService.updateuserMessage (userMessagepovo);
     return res;
     }
     @RequestMapping("/selectcolage.action")
@@ -196,6 +204,13 @@ System.out.println(slUsername);
     System.out.println(studentService.selectclassesByid (majorId));
 
         return studentService.selectclassesByid (majorId);
+    }
+    @RequestMapping("/selectroal.action")
+    @ResponseBody
+    public List<Roal> selectroal(String slUsername,HttpSession session){
+      TbUserloginpovo tbUserloginpovo= (TbUserloginpovo) session.getAttribute ("user");
+        System.out.println(tbUserloginpovo.getSlUsername ()+"userroal");
+        return studentService.selectroelByusername (tbUserloginpovo.getSlUsername ());
     }
     }
 

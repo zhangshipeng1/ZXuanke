@@ -6,6 +6,10 @@ public class Roal {
   private Integer rId;
   private String rName;
 
+  public Roal(Integer rId) {
+    this.rId = rId;
+  }
+
   public Roal(Integer rId, String rName) {
     this.rId = rId;
     this.rName = rName;

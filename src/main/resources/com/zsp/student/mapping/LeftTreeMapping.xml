@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zsp.student.mapping.LeftTreeMapping">
-    <resultMap id="selecttree" type="com.zsp.student.entity.StuRolPopovo">
+    <resultMap id="selecttree" type="com.zsp.student.entity.UserRolPopovo">
         <id property="slId" column="sl_id"></id>
         <result property="slUsername" column="sl_username"></result>
         <result property="slPassword" column="sl_password"></result>
@@ -29,12 +29,13 @@
             <result property="pSpread" column="p_spread"></result>
         </association>
     </resultMap>
-    <select id="SelectPowerByUsername" parameterType="com.zsp.student.entity.StuRolPopovo" resultMap="selecttree">
+    <select id="SelectPowerByUsername" parameterType="com.zsp.student.entity.UserRolPopovo" resultMap="selecttree">
 /*        --查询登录的用户有哪些权限*/
-        SELECT `power`.*  FROM `power`,`roal`,`role_power`,role_studentlogin,tb_studentlogin
-        WHERE `power`.p_id=`role_power`.p_id AND `role_power`.r_id=`roal`.r_id AND `roal`.r_id=role_studentlogin.r_id
-        AND role_studentlogin.sl_id=tb_studentlogin.sl_id
-        AND tb_studentlogin.sl_username=#{slUsername}
+        SELECT `power`.*  FROM `power`,`roal`,`role_power`,role_userlogin,tb_userlogin
+        WHERE `power`.p_id=`role_power`.p_id AND `role_power`.r_id=`roal`.r_id AND `roal`.r_id=role_userlogin.r_id
+        AND role_userlogin.sl_id=tb_userlogin.sl_id
+        AND tb_userlogin.sl_username=#{slUsername}
+        and roal.r_id=#{roal.rId}
         ORDER BY `power`.p_sort ASC
     </select>
 </mapper>

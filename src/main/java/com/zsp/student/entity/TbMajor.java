@@ -3,16 +3,16 @@ package com.zsp.student.entity;
 
 public class TbMajor {
 
-  private long majorId;
-  private String majorName;
-  private long collegeId;
+  private Long majorId;
+  private String majorName=null;
+  private Long collegeId;
 
 
-  public long getMajorId() {
+  public Long getMajorId() {
     return majorId;
   }
 
-  public void setMajorId(long majorId) {
+  public void setMajorId(Long majorId) {
     this.majorId = majorId;
   }
 
@@ -26,11 +26,11 @@ public class TbMajor {
   }
 
 
-  public long getCollegeId() {
+  public Long getCollegeId() {
     return collegeId;
   }
 
-  public void setCollegeId(long collegeId) {
+  public void setCollegeId(Long collegeId) {
     this.collegeId = collegeId;
   }
 

@@ -24,30 +24,30 @@ public class StudentServiceimpl implements StudentService {
     @Autowired
     private TbStudentloginMapping tbStudentloginMapping;
     @Override
-    public List<TreeNode> selectLefttree(StuRolPopovo stuRolPopovo1) {
-        System.out.println("service*****"+stuRolPopovo1.getSlUsername ());
-        List<StuRolPopovo> tbStudentloginpovos=leftTreeMapping.SelectPowerByUsername (stuRolPopovo1);
+    public List<TreeNode> selectLefttree(UserRolPopovo userRolPopovo1) {
+        System.out.println("service*****"+userRolPopovo1.getSlUsername ());
+        List<UserRolPopovo> tbStudentloginpovos=leftTreeMapping.SelectPowerByUsername (userRolPopovo1);
         System.out.println("tbStudentloginpovos"+tbStudentloginpovos);
         List<TreeNode> treeNodes=new ArrayList<> ();
-        for (StuRolPopovo stuRolPopovo:tbStudentloginpovos) {
-            System.out.println(stuRolPopovo);
-            System.out.println(stuRolPopovo.getPower());
-            boolean Spread=stuRolPopovo.getPower().getpSpread()==1?true:false;
-            treeNodes.add (new TreeNode (stuRolPopovo.getPower ().getpId (),stuRolPopovo.getPower ().getpFtherid (),stuRolPopovo.getPower ().getpName (),stuRolPopovo.getPower ().getpIcon (),stuRolPopovo.getPower ().getpUrl (),Spread));
+        for (UserRolPopovo userRolPopovo:tbStudentloginpovos) {
+            System.out.println(userRolPopovo);
+            System.out.println(userRolPopovo.getPower());
+            boolean Spread=userRolPopovo.getPower().getpSpread()==1?true:false;
+            treeNodes.add (new TreeNode (userRolPopovo.getPower ().getpId (),userRolPopovo.getPower ().getpFtherid (),userRolPopovo.getPower ().getpName (),userRolPopovo.getPower ().getpIcon (),userRolPopovo.getPower ().getpUrl (),Spread));
         }
         return treeNodes;
     }
 
     @Override
     public boolean updateImg(String img) {
-        return tbStudentloginMapping.updateStudentimg (img);
+        return tbStudentloginMapping.updateUserimg (img);
     }
 
     @Override
-    public StudentMessagepovo getStudentMessage(String username) {
+    public UserMessagepovo getuserMessage(String username) {
         System.out.println("///////////////////////"+username);
-        System.out.println("//////////////////"+tbStudentloginMapping.selectStudentmessage (username));
-        return  tbStudentloginMapping.selectStudentmessage (username);
+        System.out.println("//////////////////"+tbStudentloginMapping.selectusermessage(username));
+        return  tbStudentloginMapping.selectusermessage (username);
 
     }
 
@@ -55,13 +55,19 @@ public class StudentServiceimpl implements StudentService {
 
     //修改用户信息
   @Override
-    public boolean updatestudentMessage(StudentMessagepovo studentMessagepovo) {
-        return tbStudentloginMapping.updatestudentmMessage (studentMessagepovo);
+    public boolean updateuserMessage(UserMessagepovo userMessagepovo) {
+        return tbStudentloginMapping.updateusermMessage (userMessagepovo);
     }
 
     @Override
     public List<Collegepovo> selectcolage() {
         return tbStudentloginMapping.selectAllcolage ();
+    }
+
+    @Override
+    public List<Roal> selectroelByusername(String slUsername) {
+      return   tbStudentloginMapping.slelectRoleByusername (slUsername);
+
     }
 
     @Override

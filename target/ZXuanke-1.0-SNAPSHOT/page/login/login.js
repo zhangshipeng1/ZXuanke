@@ -10,6 +10,7 @@ layui.use(['form','layer','jquery'],function(){
     form.on("submit(login)",function(data){
         $(this).text("登录中...").attr("disabled","disabled").addClass("layui-disabled");
         setTimeout(function(){
+
             var data1=data.field;
 
             $.ajax({
@@ -25,15 +26,18 @@ layui.use(['form','layer','jquery'],function(){
                 success: function (data) {
 
 
-                    layer.load();
+
                     if(data=='true'){
                         layer.msg('hello');
                         window.location.href = "role.html";
 
                     }else{
-                        setTimeout(function(){
+
                         layer.msg(data, {icon: 2});
+                        setTimeout(function(){
+                            location.reload(false);
                         },2000);
+
                     }
                 }
             });

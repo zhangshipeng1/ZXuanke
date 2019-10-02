@@ -27,10 +27,10 @@ layui.use(['form','layer','upload','laydate',"address"],function(){
                 }else {
                     $("#sexnv").attr("checked","checked" );
                 }
-                $("select[name=slClass]").html('<option value="">'+res.tbClass.className+'</option>');
+                /*$("select[name=slClass]").html('<option value="">'+res.tbClass.className+'</option>');
                 $("select[name=slXueyuan]").html('<option value="">'+res.college.collegeName+'</option>');
                 $("select[name=slZhuanye]").html('<option value="">'+res.tbMajor.majorName+'</option>');
-                $(".userPhone").val(res.slPhone);
+                */$(".userPhone").val(res.slPhone);
                 $("#saddress").val(res.tbStudent.saddress);
                 $("#email").val(res.slEmail);
                 $("#hobby").val(res.slXingqu);
@@ -50,7 +50,7 @@ layui.use(['form','layer','upload','laydate',"address"],function(){
                 for (var i = 0; i < data.length; i++) {
 
                     proHtml += '<option value="' + data[i].collegeId + '">' + data[i].collegeName + '</option>';
-alert(proHtml );
+
                 }
                 $("select[name=slXueyuan]").append(proHtml);
                 form.render();
@@ -155,7 +155,7 @@ alert(JSON.stringify(data1));
             async:false,
             cache:false,
             type:"post",
-            url:"../../student/updateStudentlogMessage.action",
+            url:"../../student/updateuserlogMessage.action",
             data:data1,
             success:function (res) {
                 if(res){
