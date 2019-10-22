@@ -21,7 +21,7 @@
     <spring.verson>4.3.8.RELEASE</spring.verson>
     <jsp.version>2.1</jsp.version>
     <jstl.version>1.2.4</jstl.version>
-    <jackson.version>2.5.3</jackson.version>
+    <jackson.version>2.10.0</jackson.version>
     <spring.aspects.version>4.3.8.RELEASE</spring.aspects.version>
     <aopalliance.version>1.0</aopalliance.version>
     <orm.version>4.3.8.RELEASE</orm.version>
