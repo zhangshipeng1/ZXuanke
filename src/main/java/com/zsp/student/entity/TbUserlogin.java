@@ -1,8 +1,10 @@
 package com.zsp.student.entity;
 
 
-public class TbUserlogin {
+import java.io.Serializable;
 
+public class TbUserlogin implements Serializable {
+  private static final long serialVersionID=1000008282L;
   private long slId;
   private String slUsername;
   private String slPassword;

@@ -1,8 +1,10 @@
 package com.zsp.student.entity;
 
 
-public class TbClass {
+import java.io.Serializable;
 
+public class TbClass implements Serializable {
+  private static final long serialVersionID=10006666177L;
   private Long classId;
   private String className=null;
   private Long classRenshu;

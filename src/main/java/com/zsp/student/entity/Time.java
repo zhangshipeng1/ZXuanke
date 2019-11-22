@@ -1,11 +1,20 @@
 package com.zsp.student.entity;
 
 
-public class Time {
+import java.io.Serializable;
 
+public class Time implements Serializable {
+  private static final long serialVersionID=10007780L;
   private long timeId;
   private String timeCart;
 
+  @Override
+  public String toString() {
+    return "Time{" +
+            "timeId=" + timeId +
+            ", timeCart='" + timeCart + '\'' +
+            '}';
+  }
 
   public long getTimeId() {
     return timeId;

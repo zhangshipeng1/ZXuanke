@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="loginHtml">
+<head>
+    <meta charset="utf-8">
+    <title>成绩查询</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="../../js/jquery-3.4.1.js"></script>
+    <link rel="icon" href="../../images/0.jpg">
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" media="all" />
+    <style>
+        .layuitablecell{
+            height:136px;
+            line-height: 136px;
+        }
+        .ll{
+            margin-left: 20px;
+            margin-top:10px;
+        }
+        .d1{
+            position: absolute;
+            top: 400px;
+            left: 19%;
+            width: 600px;
+            height: 40px;
+        }
+        .d4{
+            position: absolute;
+            top: 950px;
+            left: 19%;
+            width: 600px;
+            height: 40px;
+        }
+        .d1 span{
+            margin-left:15%;
+        }
+        .d4 span{
+            margin-left:15%;
+        }
+        .d2{
+            position: absolute;
+            top:460px;
+            left: 26%;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body class="childrenBody">
+<fieldset class="layui-elem-field layui-field-title">
+    <legend>Z选课/成绩/成绩查询</legend>
+</fieldset>
+<div class="layui-tab" lay-filter="tab-all">
+<ul class="layui-tab-title">
+    <li data-status=""  class="layui-this">校大榜</li>
+    <li data-status="1" >个人成绩</li>
+
+</ul>
+<div class="layui-tab-content" >
+    <div class="layui-tab-item layui-show">
+        <fieldset class="layui-elem-field layui-field-title">
+            <div class="layui-field-box" >
+                <fieldset class="layui-elem-field" >
+                    <legend>筛选</legend>
+                    <div class="layui-field-box selectTable">
+
+                        <div class="selectt layui-input-inline" style="margin-left: 10px;margin-top:-30px">
+                            搜索课程名称：
+                            <div class="layui-inline">
+                                <input class="layui-input" name="cCnumber" id="selectName" autocomplete="off">
+                            </div>
+                            <!--
+                                                <button class="layui-btn" data-type="reload">搜索</button>
+                            -->
+
+                        </div>
+                        <div class="layui-form layui-inline ll" action="">
+                            <div class="selectt layui-form-item layui-inline ">
+                                <label class="layui-form-label">请选专业信息:</label>
+                                <div class="layui-input-inline">
+
+                                    <select name="cXueyuan" id="cXueyuan" lay-filter="cXueyuan">
+                                        <option value="0 ">学院</option>
+                                    </select>
+                                </div>
+                                <div class="layui-input-inline">
+                                    <select name="cZhuanye" id="cZhuanye" lay-filter="cZhuanye" disabled>
+                                        <option value="0">专业</option>
+                                    </select>
+                                </div>
+                                <button class="layui-btn" data-type="reload">查询</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <table id="demo" class="layui-table" lay-filter="coursexuan" ></table>
+
+
+            </div>
+
+        </fieldset>
+    </div>
+    <div class="layui-tab-item" >
+
+        <div style="width: 100%;height:100%">
+       <div align="center"><img src="../../images/chengji.jpg" width="750px" height="980px" >
+           <div class="d1" >
+               <span> 姓名：<label class="l1"></label> </span>
+               <span> 学院：<label class="l2"></label></span>
+               <span>专业：<label class="l3"></label></span>
+
+           </div>
+           <div class="d2">
+               <table width="500px" border="0" class="d3">
+                   <tr>
+                       <th>学号</th>
+                       <th>客程名称</th>
+                       <th>课程成绩</th>
+                       <th>学分</th>
+                   </tr>
+
+               </table>
+           </div>
+           <div class="d4">
+               <span> 总成绩：<label class="l4"></label></span>
+               <span> GPA：<label class="l5"></label> </span>
+               <span> 平均分：<label class="l6"></label></span>
+           </div>
+       </div>
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+<script type="text/javascript" src="../../layui/layui.js"></script>
+<script type="text/javascript" src="../Js/score.js"></script>
+<script>
+
+
+</script>
+</body>
+
+</html> 

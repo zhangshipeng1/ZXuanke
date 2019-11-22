@@ -1,8 +1,10 @@
 package com.zsp.student.entity;
 
 
-public class RolePower {
+import java.io.Serializable;
 
+public class RolePower implements Serializable {
+  private static final long serialVersionID=1000032225L;
   private Integer rId;
   private Integer pId;
 

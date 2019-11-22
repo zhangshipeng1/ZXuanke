@@ -1,8 +1,10 @@
 package com.zsp.student.entity;
 
 
-public class TbCourse {
+import java.io.Serializable;
 
+public class TbCourse implements Serializable {
+  private static final long serialVersionID=100028177L;
   private long cId;
   private String cCnumber;
   private String cCname;
@@ -11,77 +13,110 @@ public class TbCourse {
   private String cMessage;
   private String cType;
   private String cXueyuan;
+  private String cGrade;
+  public String getcGrade() {
+    return cGrade;
+  }
 
+  public void setcGrade(String cGrade) {
+    this.cGrade = cGrade;
+  }
 
-  public long getCId() {
+  public TbCourse() {
+  }
+
+  public TbCourse(long cId, String cCnumber, String cCname, String cSort, String cZhuanye, String cMessage, String cType, String cXueyuan, String cGrade) {
+    this.cId = cId;
+    this.cCnumber = cCnumber;
+    this.cCname = cCname;
+    this.cSort = cSort;
+    this.cZhuanye = cZhuanye;
+    this.cMessage = cMessage;
+    this.cType = cType;
+    this.cXueyuan = cXueyuan;
+    this.cGrade = cGrade;
+  }
+
+  @Override
+  public String toString() {
+    return "TbCourse{" +
+            "cId=" + cId +
+            ", cCnumber='" + cCnumber + '\'' +
+            ", cCname='" + cCname + '\'' +
+            ", cSort='" + cSort + '\'' +
+            ", cZhuanye='" + cZhuanye + '\'' +
+            ", cMessage='" + cMessage + '\'' +
+            ", cType='" + cType + '\'' +
+            ", cXueyuan='" + cXueyuan + '\'' +
+            ", cGrade='" + cGrade + '\'' +
+            '}';
+  }
+
+  public static long getSerialVersionID() {
+    return serialVersionID;
+  }
+
+  public long getcId() {
     return cId;
   }
 
-  public void setCId(long cId) {
+  public void setcId(long cId) {
     this.cId = cId;
   }
 
-
-  public String getCCnumber() {
+  public String getcCnumber() {
     return cCnumber;
   }
 
-  public void setCCnumber(String cCnumber) {
+  public void setcCnumber(String cCnumber) {
     this.cCnumber = cCnumber;
   }
 
-
-  public String getCCname() {
+  public String getcCname() {
     return cCname;
   }
 
-  public void setCCname(String cCname) {
+  public void setcCname(String cCname) {
     this.cCname = cCname;
   }
 
-
-  public String getCSort() {
+  public String getcSort() {
     return cSort;
   }
 
-  public void setCSort(String cSort) {
+  public void setcSort(String cSort) {
     this.cSort = cSort;
   }
 
-
-  public String getCZhuanye() {
+  public String getcZhuanye() {
     return cZhuanye;
   }
 
-  public void setCZhuanye(String cZhuanye) {
+  public void setcZhuanye(String cZhuanye) {
     this.cZhuanye = cZhuanye;
   }
 
-
-  public String getCMessage() {
+  public String getcMessage() {
     return cMessage;
   }
 
-  public void setCMessage(String cMessage) {
+  public void setcMessage(String cMessage) {
     this.cMessage = cMessage;
   }
 
-
-  public String getCType() {
+  public String getcType() {
     return cType;
   }
 
-  public void setCType(String cType) {
+  public void setcType(String cType) {
     this.cType = cType;
   }
 
-
-  public String getCXueyuan() {
+  public String getcXueyuan() {
     return cXueyuan;
   }
 
-  public void setCXueyuan(String cXueyuan) {
+  public void setcXueyuan(String cXueyuan) {
     this.cXueyuan = cXueyuan;
   }
-
 }

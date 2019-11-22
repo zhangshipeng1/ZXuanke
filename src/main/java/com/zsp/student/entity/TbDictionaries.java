@@ -1,8 +1,10 @@
 package com.zsp.student.entity;
 
 
-public class TbDictionaries {
+import java.io.Serializable;
 
+public class TbDictionaries implements Serializable {
+  private static final long serialVersionID=1000232421L;
   private long dId;
   private String dTypecode;
   private String dTypename;

@@ -1,8 +1,10 @@
 package com.zsp.student.entity;
 
 
-public class TbAddress {
+import java.io.Serializable;
 
+public class TbAddress implements Serializable {
+  private static final long serialVersionID=1000012135L;
   private long addId;
   private String addProvince;
   private String addCity;

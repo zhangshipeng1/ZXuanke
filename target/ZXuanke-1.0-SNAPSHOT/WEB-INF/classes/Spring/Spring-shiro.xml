@@ -119,8 +119,10 @@
         </property> -->
         <property name="filterChainDefinitions">
             <value>
-                /page/login/login.html = anon
 
+                /images/*=anon
+                /page/login/login.html = anon
+                /login_bg.jpg=anon
                 /student/dologin.action=anon
                 /student/getuserimg.action=anon
                 /student/code.action=anon
@@ -128,7 +130,7 @@
                 /verify/**=anon
                /page/login/login.js=anon
              	/css/**=anon
-                /images/**=anon
+
              	/js/**=anon
              	/json/**=anon
                 /layui/**=anon

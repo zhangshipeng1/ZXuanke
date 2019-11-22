@@ -6,194 +6,120 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f6f8a3-7871-404d-a2bc-cedbd2bc7bee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/Zijietest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/admin/entity/TbAdministratorlogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/admin/entity/TbAdministratorloginpovo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/admin/mapping/AdminMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/role/mapping/RoleMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/controler/CourseControler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Coursespovo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/RoleUserlogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbTeacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserloginpovo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbXuanke.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TeacherCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Time.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/UserRolPopovo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/CourseMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/service/CourseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/CourseServiceimpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/teacher/entity/TbTeachetlogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/teacher/entity/TbTeachetloginpovo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/teacher/mapping/TeacherMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/zsp/admin/mapping/AdminMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/zsp/role/mapping/RoleMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/CourseMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/zsp/teacher/mapping/TeacherMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/Js/xuanke.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/login/role.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/studentpage/xuanke.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/Zijietest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/admin/entity/TbAdministratorlogin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/admin/entity/TbAdministratorloginpovo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/admin/mapping/AdminMapping.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/admin/mapping/AdminMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/role/mapping/RoleMapping.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/role/mapping/RoleMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/controler/CourseControler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/Coursespovo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/RoleUserlogin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbCourse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbTeacher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbUserlogin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbUserloginpovo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbXuanke.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TeacherCourse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/Time.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/UserMessagepovo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/UserRolPopovo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/CourseMapping.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/CourseMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/service/CourseService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/serviceimpl/CourseServiceimpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/teacher/entity/TbTeachetlogin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/teacher/entity/TbTeachetloginpovo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/teacher/mapping/TeacherMapping.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/teacher/mapping/TeacherMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.2.28.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/lib/httpclient-4.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/lib/httpcore-4.4.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/lib/httpmime-4.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/lib/json-20170516.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/lib/qcloudsms-1.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/Js/xuanke.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/login/role.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/login/role.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/studentpage/xuanke.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/Zijietest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/admin/entity/TbAdministratorlogin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/admin/entity/TbAdministratorloginpovo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/admin/mapping/AdminMapping.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/admin/mapping/AdminMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/role/mapping/RoleMapping.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/role/mapping/RoleMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/controler/CourseControler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/Coursespovo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/RoleUserlogin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbCourse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbTeacher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbUserlogin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbUserloginpovo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbXuanke.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TeacherCourse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/Time.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/UserMessagepovo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/UserRolPopovo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/CourseMapping.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/CourseMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/service/CourseService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/serviceimpl/CourseServiceimpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/teacher/entity/TbTeachetlogin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/teacher/entity/TbTeachetloginpovo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/teacher/mapping/TeacherMapping.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/zsp/teacher/mapping/TeacherMapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b919311b-89b4-4b27-b54c-0c011065f166.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b919311b-89b4-4b27-b54c-0c011065f166.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="a4f6f8a3-7871-404d-a2bc-cedbd2bc7bee" name="Default Changelist" comment="第一版">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/CourseMessagePovo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/IshasCcoursepovo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/XuankePovo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/chengji.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/timg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/timg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/Js/score.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/studentpage/CourseMessage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/studentpage/Score.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZXuanke.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/UpandDown/controler/UpLond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/UpandDown/controler/UpLond.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/realms/MyRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/realms/MyRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/controler/StudentControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/controler/StudentControler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/controler/TestControler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/controler/CourseControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/controler/CourseControler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/College.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/College.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Coursespovo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Coursespovo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Power.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Roal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Roal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/RoleStudentlogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/RolePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/RolePower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/RoleUserlogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/RoleUserlogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/SelectleftTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/SelectleftTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/StuRolPopovo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/StudentMessagepovo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/UserMessagepovo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbAddress.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbDictionaries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbDictionaries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbMajor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbMajor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbStudentlogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserlogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbStudentloginpovo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/LeftTreeMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/LeftTreeMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/TbStudentloginMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/TbStudentloginMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/service/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/LoginServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/LoginServiceimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/StudentServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/StudentServiceimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Spring/SpringMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Spring/SpringMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/LeftTreeMapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/LeftTreeMapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbTeacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbTeacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserlogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserlogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserloginpovo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserloginpovo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbXuanke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbXuanke.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TeacherCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TeacherCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/CourseMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/CourseMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/CourseServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/CourseServiceimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Spring/Spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Spring/Spring-shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/CourseMapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/CourseMapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/TbStudentloginMapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/TbStudentloginMapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/public.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/login_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/Js/xuanke.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/Js/xuanke.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/page/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/login/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/page/login/role.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/login/role.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/studentpage/xuanke.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/studentpage/xuanke.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/user/changePwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/user/changePwd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/page/user/userInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/user/userInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/user/userInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/user/userInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/Spring/SpringMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/Spring/SpringMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/UpandDown/controler/UpLond.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/UpandDown/controler/UpLond.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/Spring/Spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/Spring/Spring-shiro.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/realms/MyRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/realms/MyRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/controler/StudentControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/controler/StudentControler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/controler/TestControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/controler/TestControler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/controler/CourseControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/controler/CourseControler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/College.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/College.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/Coursespovo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/Coursespovo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/Power.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/Power.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/Roal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/Roal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/RoleStudentlogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/RolePower.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/RolePower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/RoleUserlogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/RoleUserlogin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/SelectleftTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/SelectleftTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/StuRolPopovo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/StudentMessagepovo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbAddress.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbCourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbDictionaries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbDictionaries.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbMajor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbMajor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbStudent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbStudentlogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbStudentloginpovo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/LeftTreeMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/LeftTreeMapping.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/LeftTreeMapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/LeftTreeMapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/TbStudentloginMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/TbStudentloginMapping.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbTeacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbTeacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbUserlogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbUserlogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbUserloginpovo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbUserloginpovo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbXuanke.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TbXuanke.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TeacherCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TeacherCourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/Time.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/Time.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/entity/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/CourseMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/CourseMapping.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/CourseMapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/CourseMapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/TbStudentloginMapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/mapping/TbStudentloginMapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/service/LoginService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/serviceimpl/LoginServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/serviceimpl/LoginServiceimpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/serviceimpl/StudentServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/serviceimpl/StudentServiceimpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/service/CourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/service/CourseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/serviceimpl/CourseServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/WEB-INF/classes/com/zsp/student/serviceimpl/CourseServiceimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/css/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/css/public.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/images/login_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/Js/xuanke.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/Js/xuanke.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/login/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/login/role.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/login/role.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/studentpage/xuanke.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/studentpage/xuanke.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/user/changePwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/user/changePwd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/user/userInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/user/userInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/user/userInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZXuanke-1.0-SNAPSHOT/page/user/userInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ZXuanke.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Spring/SpringMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Spring/SpringMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/UpandDown/controler/UpLond.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/UpandDown/controler/UpLond.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Spring/Spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Spring/Spring-shiro.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/realms/MyRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/realms/MyRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/controler/StudentControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/controler/StudentControler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/controler/TestControler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/controler/CourseControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/controler/CourseControler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/College.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/College.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/Coursespovo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/Coursespovo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/Power.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/Power.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/Roal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/Roal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/RoleStudentlogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/RolePower.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/RolePower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/RoleUserlogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/RoleUserlogin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/SelectleftTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/SelectleftTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/StuRolPopovo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/StudentMessagepovo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbAddress.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbCourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbDictionaries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbDictionaries.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbMajor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbMajor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbStudent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbStudentlogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbStudentloginpovo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/LeftTreeMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/LeftTreeMapping.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/LeftTreeMapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/LeftTreeMapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/TbStudentloginMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/TbStudentloginMapping.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbTeacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbTeacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbUserlogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbUserlogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbUserloginpovo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbUserloginpovo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbXuanke.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TbXuanke.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TeacherCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TeacherCourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/Time.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/Time.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/entity/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/CourseMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/CourseMapping.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/CourseMapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/CourseMapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/TbStudentloginMapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/mapping/TbStudentloginMapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/service/LoginService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/serviceimpl/LoginServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/serviceimpl/LoginServiceimpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/serviceimpl/StudentServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/serviceimpl/StudentServiceimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/service/CourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/service/CourseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsp/student/serviceimpl/CourseServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsp/student/serviceimpl/CourseServiceimpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -233,6 +159,13 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="db_xuanke@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_xuanke: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tb_score: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db_xuanke@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
@@ -241,13 +174,46 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ZXuanke" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/Zijietest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/studentpage/frind.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="741">
+              <caret line="39" selection-start-line="39" selection-end-line="69" selection-end-column="6" />
+              <folding>
+                <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/Js/frind.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="26" column="173" selection-start-line="26" selection-start-column="173" selection-end-line="26" selection-end-column="173" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/Friend.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/controler/Frinds.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -255,77 +221,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/converter/CustomerConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/Js/xuanke.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1406">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/LoginServiceimpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/studentpage/xuanke.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/FrindMapping.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#fieldset#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="209">
+              <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/realms/MyRealm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/main/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserloginpovo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserlogin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/UpandDown/controler/UpLond.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+            <state relative-caret-position="1368">
+              <caret line="72" column="155" selection-start-line="72" selection-start-column="76" selection-end-line="72" selection-end-column="155" />
             </state>
           </provider>
         </entry>
@@ -333,11 +247,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/controler/StudentControler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="266">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/login.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/Js/score.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2850">
+              <caret line="150" selection-start-line="149" selection-start-column="19" selection-end-line="150" />
             </state>
           </provider>
         </entry>
@@ -349,27 +274,24 @@
       <list>
         <option value="Kotlin File" />
         <option value="FxmlFile" />
-        <option value="HTML File" />
         <option value="mybatise-xml" />
-        <option value="Interface" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="mybatis-generator-config" />
+        <option value="mybatis-config" />
+        <option value="Interface" />
+        <option value="mybatise" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>xx</find>
-      <find>layuicms2.0</find>
-      <find>ver</find>
-      <find>verify</find>
-      <find>我已</find>
       <find>m-sPopBg</find>
       <find>驊驊龔頾</find>
       <find>layui-upload-img</find>
       <find>face</find>
       <find>face.jpg</find>
-      <find>alert</find>
       <find>请求上传请求上传</find>
       <find>请求上传</find>
       <find>刷新</find>
@@ -381,6 +303,20 @@
       <find>get</find>
       <find>long</find>
       <find>tbuserlogin</find>
+      <find>getallCourse</find>
+      <find>login_bg</find>
+      <find>background</find>
+      <find>url</find>
+      <find>sel</find>
+      <find>session</find>
+      <find>refi</find>
+      <find>refresh</find>
+      <find>刷</find>
+      <find>reload</find>
+      <find>caozuo</find>
+      <find>refreshThis</find>
+      <find>页面操作</find>
+      <find>alert</find>
     </findStrings>
     <replaceStrings>
       <replace>.userName1</replace>
@@ -396,57 +332,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserlogin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/RoleUserlogin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/StudentMessagepovo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/UserMessagepovo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/StuRolPopovo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/SelectleftTree.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserloginpovo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/LeftTreeMapping.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/UserRolPopovo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/service/LoginService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/LoginServiceimpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Spring/SpringMVC.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/controler/TestControler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbStudent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbMajor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/College.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/TbStudentloginMapping.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/service/StudentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/StudentServiceimpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/user/userInfo.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/TbStudentloginMapping.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/realms/MyRealm.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/login/role.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/login/role.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbDictionaries.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbAddress.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/SelectleftTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/RoleUserlogin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/RolePower.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Roal.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/index.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/LeftTreeMapping.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/user/userInfo.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbCourse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Power.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/College.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/XuankePovo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/IshasCcourse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/realms/MyRealm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TeacherCourse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Coursespovo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbTeacher.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Time.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TeacherCourse.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/studentpage/xuanke.js" />
-        <option value="b919311b-89b4-4b27-b54c-0c011065f166/schema/db_xuanke/table/tb_course.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b919311b-89b4-4b27-b54c-0c011065f166/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/CourseMapping.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/service/CourseService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/CourseServiceimpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/regist/regist.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/Zijietest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Coursespovo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/CourseMapping.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/studentpage/xuanke.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbXuanke.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/controler/CourseControler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/admin/test.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/studentpage/xuanke.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/studentpage/courseMessage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbCourse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/CourseMessagePovo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/YiXuan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/CourseMapping.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/CourseMapping.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/CourseServiceimpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/studentpage/CourseMessage.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/Js/courseMessage.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/Js/xuanke.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/UpandDown/controler/UpLond.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/controler/StudentControler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/controler/Score.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/controler/CourseControler.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/dddd.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbScore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserloginpovo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Huizong.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/entity/ScorePovo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/service/ScoreService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/ScoreServiceimpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/ScoreMapping.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/ScoreMapping.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/Js/score.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/controler/ScoreController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/studentpage/Score.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/studentpage/frind.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/Js/frind.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/Friend.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/controler/Frinds.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/FrindMapping.java" />
       </list>
     </option>
   </component>
@@ -485,8 +421,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+    <option name="x" value="-8" />
     <option name="width" value="1346" />
     <option name="height" value="698" />
   </component>
@@ -496,7 +431,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -537,7 +471,35 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="zsp" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zsp" type="462c0819:PsiDirectoryNode" />
+              <item name="realms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zsp" type="462c0819:PsiDirectoryNode" />
               <item name="student" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zsp" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
+              <item name="controler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
@@ -555,6 +517,45 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zsp" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zsp" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zsp" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
+              <item name="serviceimpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zsp" type="462c0819:PsiDirectoryNode" />
+              <item name="teacher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="converter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -562,7 +563,79 @@
               <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="zsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="zsp" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="layui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
@@ -588,6 +661,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
               <item name="studentpage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -599,11 +690,26 @@
               <item name="page" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZXuanke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZXuanke" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -614,29 +720,32 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/webapp/layui/lay" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/page/Js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3735294" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.zsp.student.entity" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IDEA-project\ZXuanke\src\main\webapp\page\login" />
-      <recent name="D:\IDEA-project\ZXuanke\src\main\webapp" />
-      <recent name="D:\IDEA-project\ZXuanke\src\main\java" />
-      <recent name="D:\IDEA-project\ZXuanke\src\main\webapp\page\user" />
-      <recent name="D:\IDEA-project\ZXuanke\src\main\webapp\layui" />
+      <recent name="C:\IDEA-project\ZXuanke\src\main\webapp\page\Js" />
+      <recent name="C:\IDEA-project\ZXuanke\src\main\webapp\page\studentpage" />
+      <recent name="C:\IDEA-project\ZXuanke\src\main\resources\com\zsp\student\mapping" />
+      <recent name="C:\IDEA-project\ZXuanke\src\main\webapp\images" />
+      <recent name="C:\IDEA-project\ZXuanke\src\main\webapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\IDEA-project\ZXuanke\src\main\webapp" />
+      <recent name="C:\IDEA-project\ZXuanke\src\main\webapp\images" />
       <recent name="D:\IDEA-project\ZXuanke\src\main\webapp\page\login" />
       <recent name="D:\IDEA-project\ZXuanke\src\main\webapp\page" />
       <recent name="D:\IDEA-project\ZXuanke\src\main\java\com\zsp\student\entity" />
-      <recent name="D:\IDEA-project\ZXuanke\src\main\webapp\images" />
-      <recent name="D:\IDEA-project\ZXuanke\src\main\webapp\page\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -652,19 +761,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.tom">
-    <configuration name="CodeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="util.CodeUtil" />
-      <module name="ZXuanke" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyRealm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zsp.realms.MyRealm" />
       <module name="ZXuanke" />
@@ -704,6 +800,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.zsp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zsp.admin.test" />
+      <module name="ZXuanke" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zsp.admin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -785,25 +894,25 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CodeUtil" />
       <item itemvalue="Application.MyRealm" />
       <item itemvalue="Application.UpLond" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.Zijietest" />
+      <item itemvalue="Application.test" />
       <item itemvalue="Tomcat Server.tom" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Zijietest" />
         <item itemvalue="Application.MyRealm" />
         <item itemvalue="Application.UpLond" />
-        <item itemvalue="Application.CodeUtil" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\zsp\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -834,7 +943,38 @@
       <workItem from="1566993045164" duration="14148000" />
       <workItem from="1567060254612" duration="731000" />
       <workItem from="1569982287055" duration="6494000" />
-      <workItem from="1570000738789" duration="5152000" />
+      <workItem from="1570000738789" duration="6720000" />
+      <workItem from="1571832267809" duration="1934000" />
+      <workItem from="1571980935388" duration="7450000" />
+      <workItem from="1572003285463" duration="7558000" />
+      <workItem from="1572011814900" duration="137000" />
+      <workItem from="1572012134142" duration="530000" />
+      <workItem from="1572012722940" duration="941000" />
+      <workItem from="1572153309791" duration="746000" />
+      <workItem from="1572154566810" duration="30898000" />
+      <workItem from="1572247094583" duration="11265000" />
+      <workItem from="1572586558324" duration="3620000" />
+      <workItem from="1572654885509" duration="16276000" />
+      <workItem from="1572763543997" duration="1001000" />
+      <workItem from="1572765575631" duration="12185000" />
+      <workItem from="1572847111485" duration="16412000" />
+      <workItem from="1572873584810" duration="5594000" />
+      <workItem from="1572915264220" duration="9022000" />
+      <workItem from="1572945931861" duration="11131000" />
+      <workItem from="1573000384376" duration="12201000" />
+      <workItem from="1573035750198" duration="10557000" />
+      <workItem from="1573114319432" duration="14625000" />
+      <workItem from="1573172036613" duration="9287000" />
+      <workItem from="1573182941268" duration="59323000" />
+      <workItem from="1573644856953" duration="1138000" />
+      <workItem from="1573652543303" duration="4549000" />
+      <workItem from="1573690249241" duration="12721000" />
+      <workItem from="1573716569474" duration="4133000" />
+      <workItem from="1573727430477" duration="10774000" />
+      <workItem from="1573776133192" duration="34988000" />
+      <workItem from="1573900792216" duration="1032000" />
+      <workItem from="1573958149996" duration="15556000" />
+      <workItem from="1574411134929" duration="1041000" />
     </task>
     <task id="LOCAL-00001" summary="登录，主页修改信息">
       <created>1564713944561</created>
@@ -871,33 +1011,39 @@
       <option name="project" value="LOCAL" />
       <updated>1564796761036</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="第一版">
+      <created>1570009513492</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570009513492</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="531776000" />
+    <option name="totallyTimeSpent" value="861969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="UI Designer" order="1" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.32970452" />
       <window_info id="Image Layers" order="3" />
-      <window_info id="Web" order="4" sideWeight="0.5008518" side_tool="true" weight="0.22692889" />
+      <window_info id="Web" order="4" sideWeight="0.502994" side_tool="true" weight="0.31089258" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49914822" visible="true" weight="0.27382752" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.497006" visible="true" weight="0.39409986" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.46129033" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49924356" visible="true" weight="0.31935483" />
       <window_info anchor="bottom" id="Database Console" order="1" weight="0.32935154" />
-      <window_info anchor="bottom" id="Spring" order="2" weight="0.32935154" />
+      <window_info anchor="bottom" id="Spring" order="2" weight="0.32903227" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32764506" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50075644" side_tool="true" weight="0.6" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50075644" side_tool="true" weight="0.31935483" />
       <window_info anchor="bottom" id="Messages" order="6" sideWeight="0.49924356" weight="0.37741935" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32935154" />
-      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32935154" />
+      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32903227" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.09556314" />
       <window_info anchor="bottom" id="Application Servers" order="10" weight="0.32935154" />
       <window_info anchor="bottom" id="Message" order="11" />
@@ -912,46 +1058,10 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.17170954" />
-      <window_info anchor="right" id="Database" order="7" weight="0.2118003" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.06354009" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.16641453" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.04765507" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.1301059" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Capture Tool" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Web" order="4" sideWeight="0.5008518" side_tool="true" weight="0.22692889" />
-      <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49914822" visible="true" weight="0.2632375" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Run" order="0" visible="true" weight="0.3225256" />
-      <window_info anchor="bottom" id="Database Console" order="1" weight="0.32935154" />
-      <window_info anchor="bottom" id="Spring" order="2" weight="0.32935154" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32764506" />
-      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50075644" side_tool="true" weight="0.6006826" />
-      <window_info anchor="bottom" id="Messages" order="6" sideWeight="0.49924356" weight="0.37883958" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32935154" />
-      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32935154" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.09556314" />
-      <window_info anchor="bottom" id="Application Servers" order="10" weight="0.32935154" />
-      <window_info anchor="bottom" id="Message" order="11" />
-      <window_info anchor="bottom" id="Find" order="12" weight="0.32764506" />
-      <window_info anchor="bottom" id="Debug" order="13" weight="0.39761093" />
-      <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="16" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.17170954" />
-      <window_info anchor="right" id="Database" order="7" weight="0.2118003" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.06354009" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -981,17 +1091,397 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/teacher/entity/TbTeachetloginpovo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/layui/layui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="95">
+          <caret line="5" column="100" selection-start-line="5" selection-start-column="100" selection-end-line="5" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/IshasCcoursepovo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbXuanke.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Coursespovo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Time.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding>
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbTeacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2293#2294#0" expanded="true" />
+            <element signature="e#2318#2319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TeacherCourse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+          <folding>
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/Js/xuanke.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="135" column="32" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserlogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/dddd.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/rr.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/ddd.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/TbStudentloginMapping.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1748">
+          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/admin/mapping/AdminMapping.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/CourseServiceimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2014">
+          <caret line="116" column="104" selection-start-line="116" selection-start-column="104" selection-end-line="116" selection-end-column="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/service/CourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/controler/Score.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/CourseMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbMajor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/College.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/CourseMessagePovo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/java/jdk8/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding>
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserloginpovo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding>
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Huizong.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/studentpage/CourseMessage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="76" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbCourse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/ScorePovo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/Js/courseMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+          <folding>
+            <element signature="e#155#1720#0" />
+            <element signature="e#1734#2420#0" />
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+            <element signature="e#2458#3576#0" />
+            <element signature="e#3628#3660#0" />
+            <element signature="e#3714#3998#0" />
+            <element signature="e#4046#4179#0" />
+            <element signature="e#4212#4741#0" />
+            <element signature="e#4800#4902#0" />
+            <element signature="e#4958#5059#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/LeftTreeMapping.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="80" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
+        <state relative-caret-position="76">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/ScoreServiceimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/controler/CourseControler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/LeftTreeMapping.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/CourseMapping.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/ScoreMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="107" selection-start-line="21" selection-start-column="107" selection-end-line="21" selection-end-column="107" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/ScoreMapping.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="67" column="89" selection-start-line="67" selection-start-column="81" selection-end-line="67" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/service/ScoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/controler/ScoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/studentpage/Score.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="55" column="11" lean-forward="true" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/studentpage/frind.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" selection-start-line="39" selection-end-line="69" selection-end-column="6" />
+          <folding>
+            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/Js/frind.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="173" selection-start-line="26" selection-start-column="173" selection-end-line="26" selection-end-column="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/Friend.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/controler/Frinds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -999,328 +1489,36 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/page/main/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1333" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/service/StudentService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/role.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/role.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="39" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/UserRolPopovo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Roal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#130#131#0" expanded="true" />
-            <element signature="e#154#155#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Time.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TeacherCourse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbTeacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Spring/SpringMVC.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.0.0/pagehelper-5.0.0.jar!/com/github/pagehelper/page/PageMethod.class" />
-    <entry file="jar://D:/java/jdk8/src.zip!/java/lang/String.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/studentpage/xuanke.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/user/userInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1469">
-          <caret line="68" selection-start-line="67" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbCourse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b919311b-89b4-4b27-b54c-0c011065f166/schema/db_xuanke/table/tb_course.sql" />
-    <entry file="das://b919311b-89b4-4b27-b54c-0c011065f166/schema/db_xuanke/table/role_teacherlogin.sql" />
-    <entry file="das://b919311b-89b4-4b27-b54c-0c011065f166/schema/db_xuanke/table/role_teacherlogin" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b919311b-89b4-4b27-b54c-0c011065f166/console.sql" />
-    <entry file="das://b919311b-89b4-4b27-b54c-0c011065f166/schema/db_xuanke/table/college" />
-    <entry file="jar://D:/java/jdk8/src.zip!/java/lang/Thread.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/TbStudentloginMapping.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="75" column="246" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="246" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/service/CourseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/CourseServiceimpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/CourseMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b919311b-89b4-4b27-b54c-0c011065f166/schema/db_xuanke/table/tb_course" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/Coursespovo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b919311b-89b4-4b27-b54c-0c011065f166/schema/db_xuanke/table/tb_xuanke" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/LeftTreeMapping.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/zsp/student/mapping/CourseMapping.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="37" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbXuanke.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/regist/regist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2489">
-          <caret line="131" column="74" selection-start-line="131" selection-start-column="74" selection-end-line="131" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
-          <caret line="74" column="26" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/user/userInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="90" column="93" selection-start-line="90" selection-start-column="71" selection-end-line="90" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/controler/CourseControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ZXuanke.iml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/controler/TestControler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/Zijietest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/converter/CustomerConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/Js/xuanke.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1406">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/serviceimpl/LoginServiceimpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/realms/MyRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserloginpovo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/entity/TbUserlogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/UpandDown/controler/UpLond.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+        <state relative-caret-position="1368">
+          <caret line="72" column="155" selection-start-line="72" selection-start-column="76" selection-end-line="72" selection-end-column="155" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/controler/StudentControler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="266">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/studentpage/xuanke.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/login/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/Js/score.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#fieldset#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="2850">
+          <caret line="150" selection-start-line="149" selection-start-column="19" selection-end-line="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsp/student/mapping/FrindMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
         </state>
       </provider>
     </entry>

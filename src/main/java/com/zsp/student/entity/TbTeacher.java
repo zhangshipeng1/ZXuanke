@@ -1,9 +1,12 @@
 package com.zsp.student.entity;
 
 
-public class TbTeacher {
+import java.io.Serializable;
+import java.sql.Date;
 
-  private long tId;
+public class TbTeacher implements Serializable {
+  private static final long serialVersionID=10000082198L;
+  private Integer tId;
   private String tGnumber;
   private String tName;
   private String tSex;
@@ -20,148 +23,179 @@ public class TbTeacher {
   private String tJiguan;
   private String tIdcard;
 
-
-  public long getTId() {
-    return tId;
+  @Override
+  public String toString() {
+    return "TbTeacher{" +
+            "tId=" + tId +
+            ", tGnumber='" + tGnumber + '\'' +
+            ", tName='" + tName + '\'' +
+            ", tSex='" + tSex + '\'' +
+            ", tBir=" + tBir +
+            ", tJibie='" + tJibie + '\'' +
+            ", tPhone='" + tPhone + '\'' +
+            ", tAddress='" + tAddress + '\'' +
+            ", tPicture='" + tPicture + '\'' +
+            ", tZu='" + tZu + '\'' +
+            ", tZzmm='" + tZzmm + '\'' +
+            ", tJingli='" + tJingli + '\'' +
+            ", tXueli='" + tXueli + '\'' +
+            ", tBiyeshool='" + tBiyeshool + '\'' +
+            ", tJiguan='" + tJiguan + '\'' +
+            ", tIdcard='" + tIdcard + '\'' +
+            '}';
   }
 
-  public void setTId(long tId) {
+  public TbTeacher() {
+  }
+
+  public TbTeacher(Integer tId, String tGnumber, String tName, String tSex, Date tBir, String tJibie, String tPhone, String tAddress, String tPicture, String tZu, String tZzmm, String tJingli, String tXueli, String tBiyeshool, String tJiguan, String tIdcard) {
     this.tId = tId;
-  }
-
-
-  public String getTGnumber() {
-    return tGnumber;
-  }
-
-  public void setTGnumber(String tGnumber) {
     this.tGnumber = tGnumber;
-  }
-
-
-  public String getTName() {
-    return tName;
-  }
-
-  public void setTName(String tName) {
     this.tName = tName;
-  }
-
-
-  public String getTSex() {
-    return tSex;
-  }
-
-  public void setTSex(String tSex) {
     this.tSex = tSex;
-  }
-
-
-  public java.sql.Date getTBir() {
-    return tBir;
-  }
-
-  public void setTBir(java.sql.Date tBir) {
     this.tBir = tBir;
-  }
-
-
-  public String getTJibie() {
-    return tJibie;
-  }
-
-  public void setTJibie(String tJibie) {
     this.tJibie = tJibie;
-  }
-
-
-  public String getTPhone() {
-    return tPhone;
-  }
-
-  public void setTPhone(String tPhone) {
     this.tPhone = tPhone;
-  }
-
-
-  public String getTAddress() {
-    return tAddress;
-  }
-
-  public void setTAddress(String tAddress) {
     this.tAddress = tAddress;
-  }
-
-
-  public String getTPicture() {
-    return tPicture;
-  }
-
-  public void setTPicture(String tPicture) {
     this.tPicture = tPicture;
-  }
-
-
-  public String getTZu() {
-    return tZu;
-  }
-
-  public void setTZu(String tZu) {
     this.tZu = tZu;
-  }
-
-
-  public String getTZzmm() {
-    return tZzmm;
-  }
-
-  public void setTZzmm(String tZzmm) {
     this.tZzmm = tZzmm;
-  }
-
-
-  public String getTJingli() {
-    return tJingli;
-  }
-
-  public void setTJingli(String tJingli) {
     this.tJingli = tJingli;
-  }
-
-
-  public String getTXueli() {
-    return tXueli;
-  }
-
-  public void setTXueli(String tXueli) {
     this.tXueli = tXueli;
-  }
-
-
-  public String getTBiyeshool() {
-    return tBiyeshool;
-  }
-
-  public void setTBiyeshool(String tBiyeshool) {
     this.tBiyeshool = tBiyeshool;
-  }
-
-
-  public String getTJiguan() {
-    return tJiguan;
-  }
-
-  public void setTJiguan(String tJiguan) {
     this.tJiguan = tJiguan;
-  }
-
-
-  public String getTIdcard() {
-    return tIdcard;
-  }
-
-  public void setTIdcard(String tIdcard) {
     this.tIdcard = tIdcard;
   }
 
+  public static long getSerialVersionID() {
+    return serialVersionID;
+  }
+
+  public Integer gettId() {
+    return tId;
+  }
+
+  public void settId(Integer tId) {
+    this.tId = tId;
+  }
+
+  public String gettGnumber() {
+    return tGnumber;
+  }
+
+  public void settGnumber(String tGnumber) {
+    this.tGnumber = tGnumber;
+  }
+
+  public String gettName() {
+    return tName;
+  }
+
+  public void settName(String tName) {
+    this.tName = tName;
+  }
+
+  public String gettSex() {
+    return tSex;
+  }
+
+  public void settSex(String tSex) {
+    this.tSex = tSex;
+  }
+
+  public Date gettBir() {
+    return tBir;
+  }
+
+  public void settBir(Date tBir) {
+    this.tBir = tBir;
+  }
+
+  public String gettJibie() {
+    return tJibie;
+  }
+
+  public void settJibie(String tJibie) {
+    this.tJibie = tJibie;
+  }
+
+  public String gettPhone() {
+    return tPhone;
+  }
+
+  public void settPhone(String tPhone) {
+    this.tPhone = tPhone;
+  }
+
+  public String gettAddress() {
+    return tAddress;
+  }
+
+  public void settAddress(String tAddress) {
+    this.tAddress = tAddress;
+  }
+
+  public String gettPicture() {
+    return tPicture;
+  }
+
+  public void settPicture(String tPicture) {
+    this.tPicture = tPicture;
+  }
+
+  public String gettZu() {
+    return tZu;
+  }
+
+  public void settZu(String tZu) {
+    this.tZu = tZu;
+  }
+
+  public String gettZzmm() {
+    return tZzmm;
+  }
+
+  public void settZzmm(String tZzmm) {
+    this.tZzmm = tZzmm;
+  }
+
+  public String gettJingli() {
+    return tJingli;
+  }
+
+  public void settJingli(String tJingli) {
+    this.tJingli = tJingli;
+  }
+
+  public String gettXueli() {
+    return tXueli;
+  }
+
+  public void settXueli(String tXueli) {
+    this.tXueli = tXueli;
+  }
+
+  public String gettBiyeshool() {
+    return tBiyeshool;
+  }
+
+  public void settBiyeshool(String tBiyeshool) {
+    this.tBiyeshool = tBiyeshool;
+  }
+
+  public String gettJiguan() {
+    return tJiguan;
+  }
+
+  public void settJiguan(String tJiguan) {
+    this.tJiguan = tJiguan;
+  }
+
+  public String gettIdcard() {
+    return tIdcard;
+  }
+
+  public void settIdcard(String tIdcard) {
+    this.tIdcard = tIdcard;
+  }
 }

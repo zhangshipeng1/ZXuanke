@@ -1,10 +1,11 @@
 package com.zsp.student.entity;
 
 
+import java.io.Serializable;
 import java.sql.Date;
 
-public class TbStudent {
-
+public class TbStudent implements Serializable {
+  private static final long serialVersionID=100012123L;
   private Long sId;
   private Long sNumber;
   private String sName;

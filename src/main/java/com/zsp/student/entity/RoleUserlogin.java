@@ -1,8 +1,10 @@
 package com.zsp.student.entity;
 
 
-public class RoleUserlogin {
+import java.io.Serializable;
 
+public class RoleUserlogin implements Serializable {
+  private static final long serialVersionID=1000214140L;
   private long rId;
   private long slId;
 

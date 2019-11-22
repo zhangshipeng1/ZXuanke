@@ -1,12 +1,57 @@
 package com.zsp.student.entity;
 
 
-public class TeacherCourse {
+import java.io.Serializable;
 
+public class TeacherCourse implements Serializable {
+  private static final long serialVersionID=100002233L;
   private long tId;
   private long cId;
   private String tcTime;
   private long tcZhuangtai;
+  private long tcRenshu;
+  private String tcId;
+
+  public String getTcId() {
+    return tcId;
+  }
+
+  public TeacherCourse() {
+  }
+
+  @Override
+  public String toString() {
+    return "TeacherCourse{" +
+            "tId=" + tId +
+            ", cId=" + cId +
+            ", tcTime='" + tcTime + '\'' +
+            ", tcZhuangtai=" + tcZhuangtai +
+            ", tcRenshu=" + tcRenshu +
+            ", tcId='" + tcId + '\'' +
+            '}';
+  }
+
+  public TeacherCourse(long tId, long cId, String tcTime, long tcZhuangtai, long tcRenshu, String tcId) {
+    this.tId = tId;
+    this.cId = cId;
+    this.tcTime = tcTime;
+    this.tcZhuangtai = tcZhuangtai;
+    this.tcRenshu = tcRenshu;
+    this.tcId = tcId;
+  }
+
+  public void setTcId(String tcId) {
+    this.tcId = tcId;
+  }
+
+  public long getTcRenshu() {
+    return tcRenshu;
+  }
+
+  public void setTcRenshu(long tcRenshu) {
+    this.tcRenshu = tcRenshu;
+  }
+
 
 
   public long getTId() {

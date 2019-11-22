@@ -40,7 +40,7 @@ public class MyRealm extends AuthorizingRealm {
         SecurityUtils.getSubject ().getSession ().setAttribute ("user",tbUserloginpovo);
         SimpleHash sh=new SimpleHash("MD5", token1.getPassword (), salt, 1024);
         if(tbUserloginpovo!=null && token1.getPassword ()!=null && tbUserloginpovo.getSlPassword ().toString ().equals (sh.toString ())){
-            System.out.println("testpsss");
+
          info=new SimpleAuthenticationInfo (tbUserloginpovo.getSlUsername (),tbUserloginpovo.getSlPassword (),salt,getName ());
 
        }

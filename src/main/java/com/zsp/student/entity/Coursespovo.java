@@ -8,6 +8,7 @@ package com.zsp.student.entity;
  * @Data 2019/8/12 18:57
  */
 public class Coursespovo extends TbCourse {
+    private TbCourse tbCourse;
     private Time time;
     private TbMajor tbMajor;
     private TbTeacher tbTeacher;
@@ -15,40 +16,21 @@ public class Coursespovo extends TbCourse {
     private TeacherCourse teacherCourse;
     private String key;
     private TbXuanke tbXuanke;
+    private Integer xuankeCount;
 
-    @Override
-    public String toString() {
-        return "Coursespovo{" +
-                "time=" + time +
-                ", tbMajor=" + tbMajor +
-                ", tbTeacher=" + tbTeacher +
-                ", college=" + college +
-                ", teacherCourse=" + teacherCourse +
-                ", key='" + key + '\'' +
-                ", tbXuanke=" + tbXuanke +
-                '}';
+    public TbCourse getTbCourse() {
+        return tbCourse;
     }
 
-    public TbXuanke getTbXuanke() {
-        return tbXuanke;
-    }
-
-    public void setTbXuanke(TbXuanke tbXuanke) {
-        this.tbXuanke = tbXuanke;
-    }
-
-    public String getKey() {
-        return key;
-    }
-
-    public void setKey(String key) {
-        this.key = key;
+    public void setTbCourse(TbCourse tbCourse) {
+        this.tbCourse = tbCourse;
     }
 
     public Coursespovo() {
     }
 
-    public Coursespovo(Time time, TbMajor tbMajor, TbTeacher tbTeacher, College college, TeacherCourse teacherCourse, String key, TbXuanke tbXuanke) {
+    public Coursespovo(TbCourse tbCourse, Time time, TbMajor tbMajor, TbTeacher tbTeacher, College college, TeacherCourse teacherCourse, String key, TbXuanke tbXuanke, Integer xuankeCount) {
+        this.tbCourse = tbCourse;
         this.time = time;
         this.tbMajor = tbMajor;
         this.tbTeacher = tbTeacher;
@@ -56,6 +38,7 @@ public class Coursespovo extends TbCourse {
         this.teacherCourse = teacherCourse;
         this.key = key;
         this.tbXuanke = tbXuanke;
+        this.xuankeCount = xuankeCount;
     }
 
     public Time getTime() {
@@ -96,5 +79,43 @@ public class Coursespovo extends TbCourse {
 
     public void setTeacherCourse(TeacherCourse teacherCourse) {
         this.teacherCourse = teacherCourse;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+    public TbXuanke getTbXuanke() {
+        return tbXuanke;
+    }
+
+    public void setTbXuanke(TbXuanke tbXuanke) {
+        this.tbXuanke = tbXuanke;
+    }
+
+    public Integer getXuankeCount() {
+        return xuankeCount;
+    }
+
+    public void setXuankeCount(Integer xuankeCount) {
+        this.xuankeCount = xuankeCount;
+    }
+
+    @Override
+    public String toString() {
+        return "Coursespovo{" +
+                "time=" + time +
+                ", tbMajor=" + tbMajor +
+                ", tbTeacher=" + tbTeacher +
+                ", college=" + college +
+                ", teacherCourse=" + teacherCourse +
+                ", key='" + key + '\'' +
+                ", tbXuanke=" + tbXuanke +
+                ", xuankeCount=" + xuankeCount +
+                '}';
     }
 }

@@ -2,7 +2,7 @@
 <html class="loginHtml">
 <head>
     <meta charset="utf-8">
-    <title>选择角色</title>
+    <title>选择课程</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
     <script type="text/javascript" src="../../js/jquery-3.4.1.js"></script>
-
+    <link rel="icon" href="../../images/0.jpg">
     <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
     <link rel="stylesheet" href="../../css/public.css" media="all" />
     <style>
@@ -27,7 +27,7 @@
     <div class="layui-field-box" >
         <fieldset class="layui-elem-field" >
             <legend>筛选</legend>
-            <div class="layui-field-box">
+            <div class="layui-field-box selectTable">
 
                 <div class="selectt layui-input-inline" style="margin-left: 10px;margin-top:-30px">
                     搜索课程名称：
@@ -53,25 +53,38 @@
                                 <option value="0">专业</option>
                             </select>
                         </div>
-
                         <button class="layui-btn" data-type="reload">查询</button>
+
                     </div>
+
                 </div>
 
             </div>
         </fieldset>
+        <div class="xuanTable layui-input-inline">
+            <button class="layui-btn" data-type="getCheckData" >批量选课</button>
 
+        </div>
         <table id="demo" class="layui-table" lay-filter="coursexuan"></table>
-        <script type="text/html" id="xuanke">
-            <div class="layui-btn-group">
-                <button class="layui-btn" data-type="getCheckData">选择所选课程</button>
+       <!-- <script type="text/html" id="xuanke">
+            <div class="layui-btn-group xuanTable">
+                <button class="layui-btn" lay-event="getCheckData">选择所选课程</button>
 
             </div>
-        </script>
+        </script>-->
         <script type="text/html" id="barDemo">
             <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
-            <a class="layui-btn layui-btn-xs" id="xuan{{d.cId}}" disabled="true" lay-event="xuanke"></a>
+            {{# if(d.tbXuanke.xuanZhuangtai=='0'){}}
+               <a class="layui-btn layui-btn-xs ref"  disabled="true" lay-event="xuanke"  data-type="reload">未选</a>
+            {{# }}}
+            {{# if(d.tbXuanke.xuanZhuangtai=='1'){}}
+                <a  class="layui-btn layui-btn-xs layui-btn-disabled"  disabled >已选 </a>
 
+            {{# }}}
+
+            {{# if(d.xuankeCount==30){}}
+                <a class="layui-btn layui-btn-xs layui-btn-disabled"  disabled >已满</a>
+            {{# }}}
         </script>
     </div>
 </fieldset>
@@ -80,4 +93,4 @@
 
 </body>
 
-</html>
+</html> 

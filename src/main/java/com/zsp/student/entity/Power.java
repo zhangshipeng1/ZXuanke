@@ -1,8 +1,10 @@
 package com.zsp.student.entity;
 
 
-public class Power {
+import java.io.Serializable;
 
+public class Power implements Serializable {
+  private static final long serialVersionID=100023320L;
   private Integer pId;
   private String pName;
   private Integer pFtherid;

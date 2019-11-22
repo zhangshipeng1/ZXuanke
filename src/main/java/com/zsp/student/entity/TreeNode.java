@@ -1,5 +1,6 @@
 package com.zsp.student.entity;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +11,8 @@ import java.util.List;
  * @Author 张世朋
  * @Data 2019/7/26 9:16
  */
-public class TreeNode {
+public class TreeNode implements Serializable {
+    private static final long serialVersionID=1000010L;
        private Integer id;
        private Integer pid;
        private String title;

@@ -50,6 +50,7 @@ $(function () {
 
     //第一个实例
     table.render({
+        
         elem: '#demo'
         ,height: 312
         ,toolbar:"#xuanke"
@@ -62,6 +63,7 @@ $(function () {
         ,url: '../../course/getallCourse.action' //数据接口
         ,page: true //开启分页
         ,id: 'xuankeReload'
+
         ,cols: [[ //表头
             {type:'checkbox'}
             ,{field:'cId', width:80, title: 'ID', sort: true}
@@ -73,13 +75,36 @@ $(function () {
             ,{field: 'college.collegeName', title: '课程所属学院', sort: true,  templet:'<div>{{d.college? d.college.collegeName: ""}}</div>'}
             ,{field: 'tbMajor.majorName', title: '课程所属专业', sort: true, templet:'<div>{{d.tbMajor? d.tbMajor.majorName: ""}}</div>'}
 
-            ,{field: 'caozuo', title: '操作' ,templet:'<div id="barDemo">               {{d.tbXuanke.xuanZhuangtai=="null"? "选课": d.tbXuanke.xuanZhuangtai=="1" ?"已选","已满"}}</div>'}
+            , {fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
         ]]
+        ,done:function (res, curr, count) {
+            alert(res.data[0].tbXuanke.xuanZhuangtai);
+            //table_data = res.data;
+            trNum = count;
+            for(var i = 0;i<res.data.length;i++){
+                var state = res.data[i].tbXuanke.xuanZhuangtai;
+                alert(state);
+                if(state != '0'){
+                    var index = res.data[i]['LAY_TABLE_INDEX'];
+                    $(".layui-table tr[data-index="+index+"] input[type='checkbox']").prop('disabled',true);
+                    $(".layui-table tr[data-index="+index+"] input[type='checkbox']").next().addClass('layui-btn-disabled');
+                    $('.layui-table tr[data-index=' + index + '] input[type="checkbox"]').prop('name', 'caib');
+                }else{
+                    table_data.push(res.data[i])
+                }
+            }
+
+        }
+
     });
 //搜索
+    table.on('checkbox(demo)', function(obj){
+        console.log(obj)
+    });
     var $ = layui.$, active = {
 
         reload: function(){
+
             var slXueyuan = $('#slXueyuan');
             var slZhuanye = $('#slZhuanye');
             var selectName = $('#selectName');
@@ -95,34 +120,97 @@ $(function () {
 
                 }
             }, 'data');
+        },
+        getCheckData: function(){ //获取选中数据
+            layer.alert("aa");
+            var checkStatus = table.checkStatus('xuankeReload')
+                ,data = checkStatus.data;
+            //批量选课
+
+            layer.confirm('确定选课吗', function(index){
+
+                $.ajax({
+                        async:false,
+                        cache:false,
+                        contentType:'application/json;charset=utf-8',
+                        type:'post',
+                        data:JSON.stringify(data),
+                        url:"../../course/duoxuan.action",
+                        success:function (res) {
+                          layer.msg(res);
+
+                            table.reload('xuankeReload', {
+                                where: { //设定异步数据接口的额外参数，任意设
+                                    aaaaaa: 'xxx'
+                                }
+                            });
+
+                        }
+                    }
+
+
+                );
+
+
+                layer.close(index);
+            });
         }
     };
+
     table.on('tool(coursexuan)', function(obj){ //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
         var data = obj.data //获得当前行数据
             ,layEvent = obj.event; //获得 lay-event 对应的值
         if(layEvent === 'detail'){
             layer.msg('查看操作');
         } else if(layEvent === 'xuanke'){
-          $.ajax({
-           async:false,
-           cache:false,
-           type:'post',   
-              data:"cId="+data.cId,
-              url:"",
-              success:function (res) {
-                  
-              }
-          });
+            //单次选课
+
             layer.confirm('确定选课吗', function(index){
-              $("#xuan"+data.cId).text("sss").attr('herf',"#");
+
+                $.ajax({
+                    async:false,
+                    cache:false,
+                    contentType:'application/json;charset=utf-8',
+                    type:'post',
+                    data:JSON.stringify(data),
+                    url:"../../course/xuanke.action",
+                    success:function (res) {
+                    if (res){
+                        layer.msg('选课成功');
+
+                        table.reload('xuankeReload', {
+                            where: { //设定异步数据接口的额外参数，任意设
+                                aaaaaa: 'xxx'
+                            }
+                        });
+                        layer.close(index);
+                    }else {
+                        layer.msg('选课失败');
+                    }
+
+                    }
+                }
+
+
+                );
+
+
                 layer.close(index);
-            });
+                    });
+
+
 
         }
+
     });
 
 
-    $('.selectt .layui-btn').on('click', function(){
+    $('.selectTable  .layui-btn').on('click', function(){
+
+        var type = $(this).data('type');
+        active[type] ? active[type].call(this) : '';
+    });
+    $('.xuanTable .layui-btn').on('click', function(){
         var type = $(this).data('type');
         active[type] ? active[type].call(this) : '';
     });

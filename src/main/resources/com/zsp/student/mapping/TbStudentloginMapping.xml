@@ -16,6 +16,7 @@
        <result column="sl_email" property="slEmail"></result>
        <result column="sl_pingjia" property="slPingjia"></result>
        <result column="add_id" property="addId"></result>
+
       <association property="roal" javaType="com.zsp.student.entity.Roal">
           <id column="r_id" property="rId"></id>
           <result column="r_name" property="rName"></result>
@@ -60,7 +61,7 @@
     </update>
     <select id="selectusermessage" parameterType="java.lang.String" resultMap="selectuserMessage">
         SELECT *FROM tb_userlogin,roal,tb_student,role_userlogin
-        WHERE `tb_userlogin`.s_id=tb_student.s_id
+        WHERE `tb_userlogin`.s_id=tb_student.s_id 
         AND tb_userlogin.sl_id=role_userlogin.sl_id AND roal.r_id=role_userlogin.r_id
 
         AND tb_userlogin.sl_username=#{slUsername}

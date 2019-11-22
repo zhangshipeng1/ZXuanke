@@ -1,8 +1,10 @@
 package com.zsp.student.entity;
 
 
-public class Roal {
+import java.io.Serializable;
 
+public class Roal implements Serializable {
+  private static final long serialVersionID=1000093290L;
   private Integer rId;
   private String rName;
 

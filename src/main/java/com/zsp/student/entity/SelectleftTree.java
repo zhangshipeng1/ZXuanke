@@ -1,5 +1,7 @@
 package com.zsp.student.entity;
 
+import java.io.Serializable;
+
 /**
  * @PackageName:com.zsp.student.entity
  * @ClassName:SelectleftTree
@@ -7,7 +9,8 @@ package com.zsp.student.entity;
  * @Author 张世朋
  * @Data 2019/7/26 11:23
  */
-public class SelectleftTree {
+public class SelectleftTree implements Serializable {
+    private static final long serialVersionID=10021890L;
     private Roal roal;
     private TbUserloginpovo tbUserloginpovo;
     private Power power;
