@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="loginHtml">
+<head>
+    <meta charset="utf-8">
+    <title>课程信息</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="../../js/jquery-3.4.1.js"></script>
+    <link rel="icon" href="../../images/0.jpg">
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" media="all" />
+    <script type="text/javascript"  src="../Js/echarts.js"></script>
+    <script type="text/javascript" src="../../layui/layui.js"></script>
+    <script type="text/javascript" src="../Js/xuankeMessage.js"></script>
+    <style>
+        .layuitablecell{
+            height:136px;
+            line-height: 136px;
+        }
+        .ll{
+            margin-left: 20px;
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body class="childrenBody">
+<fieldset class="layui-elem-field layui-field-title">
+    <legend>Z选课/选课情况</legend>
+
+    <div style="width: 1000px;height:400px ">
+        <h2>选课分布：</h2>
+        <div id="main" style="width: 600px;height:400px;margin-left: 200px"></div>
+    </div>
+
+    <div class="layui-field-box" >
+        <fieldset class="layui-elem-field" >
+            <legend>筛选</legend>
+            <div class="layui-field-box selectTable">
+
+                <div class="selectt layui-input-inline" style="margin-left: 10px;margin-top:-30px">
+                    搜索课程名称：
+                    <div class="layui-inline">
+                        <input class="layui-input" name="cCnumber" id="selectName" autocomplete="off">
+                    </div>
+                    <!--
+                                        <button class="layui-btn" data-type="reload">搜索</button>
+                    -->
+
+                </div>
+                <div class="layui-form layui-inline ll" action="">
+                    <div class="selectt layui-form-item layui-inline ">
+                        <label class="layui-form-label">请选专业信息:</label>
+                        <div class="layui-input-inline">
+
+                            <select name="cXueyuan" id="cXueyuan" lay-filter="cXueyuan">
+                                <option value="0 ">学院</option>
+                            </select>
+                        </div>
+                        <div class="layui-input-inline">
+                            <select name="cZhuanye" id="cZhuanye" lay-filter="cZhuanye" disabled>
+                                <option value="0">专业</option>
+                            </select>
+                        </div>
+                        <div class="layui-input-inline">
+                            <select name="cClass" id="cClass" lay-filter="cClass" disabled>
+                                <option value="0">班级</option>
+                            </select>
+                        </div>
+                        <button class="layui-btn" data-type="reload">查询</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </fieldset>
+
+        <table id="demo" class="layui-table" lay-filter="coursexuan" ></table>
+
+
+    </div>
+
+</fieldset>
+
+
+</body>
+
+</html>

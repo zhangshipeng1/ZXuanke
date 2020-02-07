@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zsp.student.mapping.FriendMapping">
+    <select id="selectFrinds" resultType="com.zsp.student.entity.Frindpovo" parameterType="string">
+       SELECT *FROM tb_student,tb_xuanke,tb_userlogin WHERE tb_student.s_id=tb_userlogin.s_id AND tb_userlogin.sl_id=tb_xuanke.xuan_slid
+        AND tb_xuanke.xuan_course IN(SELECT tb_xuanke.xuan_course FROM tb_xuanke ,tb_userlogin WHERE tb_userlogin.sl_id=tb_xuanke.xuan_slid
+        AND tb_userlogin.sl_username=#{slUsername}
+        ) AND tb_userlogin.sl_username!=#{slUsername}
+    </select>
+</mapper>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zsp.student.mapping.ScoreMapping">
+    <resultMap id="selectScore" type="com.zsp.student.entity.ScorePovo">
+        <id property="scId" column="sc_id"></id>
+        <result property="sScore" column="s_score"></result>
+        <result property="sXuefen" column="s_xuefen"></result>
+        <association property="tbStudent" javaType="com.zsp.student.entity.TbStudent">
+            <id property="sId" column="s_id"></id>
+            <result property="sNumber" column="s_number"></result>
+            <result property="sName" column="s_name"></result>
+        </association>
+        <association property="college" javaType="com.zsp.student.entity.College">
+            <id column="college_id" property="collegeId"></id>
+            <result column="college_name" property="collegeName"></result>
+        </association>
+        <association property="tbMajor" javaType="com.zsp.student.entity.TbMajor">
+            <id column="major_id" property="majorId"></id>
+            <result column="major_name" property="majorName" ></result>
+        </association>
+        <association property="tbCourse" javaType="com.zsp.student.entity.TbCourse">
+            <id property="cId" column="c_id"></id>
+            <result property="cCname" column="c_cname"></result>
+        </association>
+    </resultMap>
+    <resultMap id="selectMessage" type="com.zsp.student.entity.TbUserloginpovo">
+        <association property="tbMajor" javaType="com.zsp.student.entity.TbMajor">
+            <id property="majorId" column="major_id"></id>
+            <result property="majorName" column="major_name"></result>
+
+        </association>
+        <association property="tbStudent" javaType="com.zsp.student.entity.TbStudent">
+            <id property="sId" column="s_id"></id>
+            <result property="sName" column="s_name"></result>
+        </association>
+        <association property="college" javaType="com.zsp.student.entity.College">
+            <id property="collegeId" column="college_id"></id>
+            <result property="collegeName" column="college_name"></result>
+        </association>
+    </resultMap>
+
+    <sql id="selectscore" >
+  SELECT tb_student.s_number ,tb_student.s_name,tb_score.s_score,tb_score.s_xuefen,tb_score.sc_id,college.college_name,tb_major.major_name,tb_course.c_cname
+        FROM tb_student,tb_score,tb_userlogin,tb_course,tb_major,college,tb_class
+        WHERE tb_student.s_id=tb_userlogin.s_id AND tb_student.s_id=tb_score.s_id
+        AND tb_userlogin.sl_class=tb_class.class_id
+        AND tb_score.s_course=tb_course.c_id AND tb_userlogin.sl_xueyuan=college.college_id
+        AND tb_major.major_id=tb_userlogin.sl_zhuanye
+    </sql>
+    <select id="selectUserMessage" resultMap="selectMessage" parameterType="integer">
+        select tb_student.s_name,college.college_name,tb_major.major_name from tb_major,tb_student,college,tb_userlogin
+        WHERE  tb_userlogin.s_id=tb_student.s_id AND tb_userlogin.sl_xueyuan=college.college_id
+            AND tb_userlogin.sl_zhuanye=tb_major.major_id
+            AND tb_userLogin.sl_username=#{slUsername}
+    </select>
+    <select id="selectmyScore" resultMap="selectScore" parameterType="integer">
+        SELECT tb_student.s_number ,tb_score.s_score,tb_course.c_cname,tb_score.s_xuefen FROM tb_student,tb_score,tb_userlogin,tb_course
+        WHERE tb_student.s_id=tb_userlogin.s_id AND tb_student.s_id=tb_score.s_id
+        AND tb_score.s_course=tb_course.c_id
+        and tb_userlogin.sl_username=#{slUsername}
+    </select>
+    <select id="selectAllscore" resultMap="selectScore" >
+        <include refid="selectscore"></include>
+    </select>
+    <select id="selectScoreBysomthing" resultMap="selectScore" parameterType="String" >
+        <bind name="key" value="'%'+key+'%'"/>
+        <include refid="selectscore"></include>
+        <if test="cZhuanye != null and cZhuanye != 0">AND tb_userlogin.sl_zhuanye=#{cZhuanye}</if>
+        <if test="cXueyuan != 0 and cXueyuan != null ">AND tb_userlogin.sl_xueyuan=#{cXueyuan}</if>
+        <if test="key !='' and key != null ">and tb_course.c_cname like #{key}</if>
+    </select>
+</mapper>

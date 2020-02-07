@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教师评价</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="../../js/jquery-3.4.1.js"></script>
+    <link rel="icon" href="../../images/0.jpg">
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" media="all" />
+    <script type="text/javascript" src="../../layui/layui.js"></script>
+    <script type="text/javascript" src="../Js/pingjia.js"></script>
+</head>
+<body>
+<fieldset class="layui-elem-field layui-field-title">
+    <legend>Z选课/评价</legend>
+</fieldset>
+<form class="layui-form" action="../../pingjia/InPingjia.action">
+<div class="layui-form-item" style="margin-left: 400px">
+    <div class="layui-inline">
+        <label class="layui-form-label">教师：</label>
+        <div class="layui-input-inline">
+            <input type="text" name="tName"  autocomplete="off" placeholder="请输入标题"  class="layui-input">
+        </div>
+    </div><br>
+    <div class="layui-inline">
+        <label class="layui-form-label">授课内容：</label>
+        <div class="layui-input-inline">
+            <input type="text" name="tCourese"  autocomplete="off" placeholder="请输入标题"  class="layui-input">
+        </div>
+    </div>
+    <div class="layui-input-inline">
+        <input type="hidden" name="pingFenshu" id="xinghid" required   disabled placeholder="请输入标题" autocomplete="off" class="layui-input layui-disabled">
+    </div>
+<div  style="margin-left: 100px">评星：<div id="pingjia"></div></div>
+
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">评价</label>
+        <div class="layui-input-inline">
+            <textarea name="pingPingyu" placeholder="请输入内容" class="layui-textarea"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="Pingjiaform">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</div>
+</form>
+
+
+</body>
+</html>

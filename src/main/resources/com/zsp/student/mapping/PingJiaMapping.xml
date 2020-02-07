@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zsp.student.mapping.PingJiaMapping">
+    <select id="getsId" parameterType="string" resultType="string">
+       SELECT s_id FROM tb_userlogin WHERE tb_userlogin.sl_username=#{username}
+    </select>
+    <select id="getTid" parameterType="string" resultType="string">
+
+            SELECT tb_teacher.t_id FROM tb_teacher WHERE tb_teacher.t_id IN
+     (SELECT tb_xuanke.xuan_tid FROM tb_xuanke,tb_userlogin,tb_course WHERE tb_xuanke.xuan_slid=tb_userlogin.sl_id AND tb_course.c_id=tb_xuanke.xuan_course AND s_id=#{sId} AND tb_course.c_cname=#{tCourese}
+      )AND tb_teacher.t_name=#{tName}
+    </select>
+    <insert id="InPingja">
+        <selectKey keyProperty="pingId" order="BEFORE" resultType="string">
+            select replace(uuid(),"_","") from dual
+        </selectKey>
+             insert into tb_pingjia (ping_id, ping_fenshu, ping_pingyu, t_id, s_id) values (#{pingId},#{pingFenshu},#{pingPingyu},#{tId},#{sId});
+    </insert>
+</mapper>

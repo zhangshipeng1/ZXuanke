@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zsp.student.mapping.VideoOnlineMapping">
+    <select id="selectVideos" resultType="com.zsp.student.entity.VideoPovo" >
+        SELECT *FROM tb_video,tb_teacher WHERE tb_video.v_tid=tb_teacher.t_id AND v_jiename=#{vJiename}
+         LIMIT #{pageNo},#{pageSize}
+    </select>
+    <select id="selectJiVideo" resultType="com.zsp.student.entity.VideoPovo" >
+      SELECT *FROM tb_video,tb_teacher WHERE tb_video.v_tid=tb_teacher.t_id
+ AND tb_video.v_name=#{vName}
+    </select>
+    <select id="getvideoUrl" resultType="com.zsp.student.entity.VideoPovo" >
+      SELECT *FROM tb_video,tb_teacher WHERE tb_video.v_tid=tb_teacher.t_id
+ AND tb_video.v_Id=#{vId}
+    </select>
+    <select id="getCount" resultType="integer" parameterType="string">
+        SELECT COUNT(*) FROM tb_video,tb_teacher WHERE tb_video.v_tid=tb_teacher.t_id AND v_jiename=#{vJiename}
+    </select>
+    <select id="selectVideoImgUrl" resultType="com.zsp.student.entity.VideoPovo">
+        SELECT tb_video.v_img FROM tb_video,tb_teacher WHERE tb_video.v_tid=tb_teacher.t_id AND v_jiename=#{vJiename} AND v_id=#{vId}
+    </select>
+</mapper>

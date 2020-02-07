@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zsp.teacher.mapping.ThScoreMapping">
+    <select id="getSid" parameterType="string" resultType="long">
+        SELECT tb_student.s_id FROM tb_student WHERE tb_student.s_number=#{sNumber}
+    </select>
+    <select id="ishasScore" parameterType="com.zsp.teacher.entity.TbScorePovo"  resultType="com.zsp.teacher.entity.TbScorePovo">
+        SELECT * FROM tb_score WHERE tb_score.s_id=#{sId} AND tb_score.s_course=#{sCourse}
+
+    </select>
+    <insert id="addScore" parameterType="com.zsp.teacher.entity.TbScorePovo" >
+   <selectKey keyProperty="scId" order="BEFORE" resultType="string">
+       select  replace(uuid(),"_","") from dual
+   </selectKey>
+        INSERT INTO tb_score VALUES(#{sId},#{sCourse},#{sScore},#{sXuefen},#{scId})
+    </insert>
+    <select id="ishasScoreByscId"  resultType="com.zsp.teacher.entity.TbScorePovo" parameterType="string">
+        SELECT * FROM tb_score WHERE tb_score.sc_id=#{scId}
+    </select>
+    <update id="upScore" parameterType="com.zsp.teacher.entity.TbScorePovo" >
+         UPDATE tb_score SET tb_score.s_score=#{sScore} ,tb_score.s_xuefen=#{sXuefen} WHERE tb_score.sc_id=#{scId}
+    </update>
+    <delete id="delScore" parameterType="string" >
+        DELETE FROM tb_score WHERE tb_score.sc_id=#{scId}
+    </delete>
+    <update id="onlupScore" parameterType="com.zsp.teacher.entity.TbScorePovo">
+        UPDATE tb_score SET tb_score.s_score=#{sScore}  WHERE tb_score.sc_id=#{scId}
+    </update>
+    <update id="onlupxuefen" parameterType="com.zsp.teacher.entity.TbScorePovo">
+        UPDATE tb_score SET tb_score.s_xuefen=#{sXuefen} WHERE tb_score.sc_id=#{scId}
+    </update>
+</mapper>

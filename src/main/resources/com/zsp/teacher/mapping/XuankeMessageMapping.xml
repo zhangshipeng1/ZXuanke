@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zsp.teacher.mapping.XuankeMessageMapping">
+    <resultMap id="xuankeData" type="com.zsp.teacher.entity.XuankethMesspovo">
+        <result column="s_number" property="sNumber"></result>
+        <result column="s_name" property="sName"></result>
+        <result column="c_cname" property="cCname"></result>
+        <result column="college_name" property="collegeName"></result>
+        <result column="major_name" property="majorName"></result>
+        <result column="class_name" property="className"></result>
+    </resultMap>
+    <resultMap id="getBing" type="com.zsp.teacher.entity.Bingpovo">
+        <result property="name" column="c_cname"></result>
+        <result property="value" column="c_renhu"></result>
+    </resultMap>
+    <select id="selectBingData" resultMap="getBing">
+        SELECT tb_course.c_cname,COUNT(*) c_renhu FROM tb_course,tb_xuanke WHERE tb_course.c_id=tb_xuanke.xuan_course
+        GROUP BY tb_course.c_cname
+    </select>
+    <sql id="xuankedadasql">
+         SELECT  tb_student.s_number ,tb_student.s_name,tb_course.c_cname,college.college_name,tb_major.major_name,tb_class.class_name FROM tb_xuanke,tb_course,tb_student,tb_userlogin,college,tb_major,tb_class
+        WHERE tb_xuanke.xuan_course=tb_course.c_id AND tb_xuanke.xuan_slid=tb_userlogin.sl_id
+        AND tb_userlogin.sl_xueyuan=college.college_id AND tb_userlogin.sl_zhuanye=tb_major.major_id AND tb_userlogin.sl_class=tb_class.class_id
+        AND tb_student.s_id=tb_userlogin.s_id AND tb_xuanke.xuan_tid IN (SELECT tb_userlogin.t_id FROM tb_userlogin WHERE tb_userlogin.sl_username=#{username} )
+
+    </sql>
+    <select id="getxuankedata" resultMap="xuankeData" parameterType="string">
+        <include refid="xuankedadasql"></include>
+    </select>
+    <select id="getxuandataBYsomething" resultMap="xuankeData" parameterType="string">
+        <bind name="key" value="'%'+key+'%'"/>
+        <include refid="xuankedadasql"></include>
+        <if test="cZhuanye != null and cZhuanye != 0">AND tb_userlogin.sl_zhuanye=#{cZhuanye}</if>
+        <if test="cXueyuan != 0 and cXueyuan != null ">AND tb_userlogin.sl_xueyuan=#{cXueyuan}</if>
+        <if test="cClass != 0 and cClass != null ">and tb_class.class_id=#{cClass}</if>
+        <if test="key !='' and key != null ">and tb_student.s_name like #{key}</if>
+    </select>
+    <select id="getcoursemapper" resultType="com.zsp.teacher.entity.Courseoptionpovo" parameterType="string">
+        SELECT tb_course.c_id,tb_course.c_cname FROM tb_course
+        WHERE tb_course.c_id IN (SELECT tb_xuanke.xuan_course FROM tb_xuanke
+        WHERE tb_xuanke.xuan_slid=(SELECT tb_userlogin.sl_id FROM tb_student,tb_userlogin
+        WHERE tb_student.s_id=tb_userlogin.s_id AND tb_student.s_number=#{sNumber})
+        )
+    </select>
+ </mapper>

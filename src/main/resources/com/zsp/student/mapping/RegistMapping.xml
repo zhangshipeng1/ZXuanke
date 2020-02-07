@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zsp.student.mapping.RegistMapping">
+    <select id="selectStudetById" resultType="com.zsp.student.entity.TbStudent" parameterType="string">
+        select * from tb_student where s_number=#{rNumber}
+    </select>
+    <select id="selectTeacherById" resultType="com.zsp.student.entity.TbTeacher" parameterType="string">
+        select * from tb_teacher where t_gnumber=#{rNumber}
+    </select>
+    <select id="selectFaceIdByUsername" parameterType="string" resultType="integer">
+        SELECT user_face_info.id FROM user_face_info
+        WHERE user_face_info.name=#{username}
+    </select>
+    <select id="selectRoalid" parameterType="string" resultType="integer">
+        SELECT r_id FROM roal WHERE roal.r_name=#{selectRoalid}
+    </select>
+    <insert id="InsertUserMessage" parameterType="com.zsp.student.entity.TbUserloginpovo">
+
+        INSERT INTO tb_userlogin (sl_id,sl_username,sl_password,sl_zhuanye,sl_xueyuan,sl_class,s_id,sl_phone,sl_email,t_id,a_id,face_id,ps_copy)
+         VALUES (#{slId},#{slUsername},#{slPassword},#{slZhuanye},#{slXueyuan},#{slClass},#{sId},#{slPhone},#{slEmail},#{tId},#{aId},#{faceId},#{psCopy})
+    </insert>
+    <insert id="initRoalpower" >
+        INSERT INTO role_userlogin (r_id,sl_id) VALUES (#{roalid},#{username})
+    </insert>
+    <select id="selectStuddentNumberCount"  parameterType="string" resultType="integer">
+        SELECT COUNT(*) numbernum FROM tb_userlogin,tb_student WHERE tb_userlogin.s_id=tb_student.s_id
+        AND tb_student.s_number=#{number}
+    </select>
+    <select id="selectTeacherNumberCount"  parameterType="string" resultType="integer">
+        SELECT COUNT(*) numbernum FROM tb_userlogin,tb_teacher WHERE tb_userlogin.t_id=tb_teacher.t_id
+        AND tb_student.s_number=#{number}
+    </select>
+    <select id="selectadminNumberCount"  parameterType="string" resultType="integer">
+        SELECT COUNT(*) numbernum FROM tb_userlogin,tb_administrator WHERE tb_userlogin.a_id=tb_administrator.a_id
+        AND tb_student.s_number=#{number}
+    </select>
+    <delete id="delregistuserface" parameterType="string">
+        DELETE FROM user_face_info WHERE user_face_info.name=#{data}
+    </delete>
+</mapper>

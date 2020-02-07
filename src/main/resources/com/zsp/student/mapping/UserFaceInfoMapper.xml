@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zsp.student.mapping.UserFaceInfoMapper">
+    <resultMap id="userFace" type="com.zsp.student.entity.UserFaceInfo">
+        <id column="id" property="id" javaType="int"/>
+        <result column="group_id" property="groupId" javaType="java.lang.Integer"/>
+        <result column="face_id" property="faceId" javaType="String"/>
+        <result column="phone_number" property="phoneNumber" javaType="String"/>
+        <result column="create_time" property="createTime" javaType="java.util.Date"/>
+        <result column="face_feature" property="faceFeature"/>
+    </resultMap>
+
+    <resultMap id="userFace2" type="com.zsp.student.entity.FaceUserInfo">
+        <id column="id" property="id" javaType="int"/>
+        <result column="group_id" property="groupId" javaType="java.lang.Integer"/>
+        <result column="face_id" property="faceId" javaType="String"/>
+        <result column="phone_number" property="phoneNumber" javaType="String"/>
+        <result column="create_time" property="createTime" javaType="java.util.Date"/>
+        <result column="face_feature" property="faceFeature"/>
+    </resultMap>
+
+
+    <select id="findUserFaceInfoList" resultMap="userFace"  resultType="com.zsp.student.entity.UserFaceInfo">
+        SELECT name,create_time from user_face_info
+    </select>
+
+    <insert id="insertUserFaceInfo" parameterType="com.zsp.student.entity.UserFaceInfo" >
+            INSERT INTO user_face_info (group_id,face_id,`name`,age,gender,phone_number,face_feature) VALUES (#{groupId},#{faceId},#{name},#{age},#{gender},#{phoneNumber},#{faceFeature})
+    </insert>
+
+    <select id="getUserFaceInfoByGroupId" resultMap="userFace2" parameterType="java.lang.Integer" resultType="com.zsp.student.entity.FaceUserInfo">
+        select face_id,name,face_feature from user_face_info
+    </select>
+    <select id="selectUserFaceInfo" parameterType="string" resultType="com.zsp.student.entity.UserFaceInfo">
+        select * from user_face_info where name=#{name}
+    </select>
+</mapper>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="../../js/jquery-3.4.1.js"></script>
+    <link rel="icon" href="../../images/0.jpg">
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" media="all" />
+    <script type="text/javascript" src="../../layui/layui.js"></script>
+    <script type="text/javascript" src="../Js/addScore.js"></script>
+</head>
+<body>
+<form class="layui-form layui-row">
+    <div class="layui-col-md6 layui-col-xs12">
+        <div class="layui-form-item">
+            <label class="layui-form-label">学号</label>
+            <div class="layui-input-block">
+                <input type="text" value="" class="layui-input " id="sNumber" name="sNumber" style="width:200px;">
+            </div>
+        </div>
+
+        <div class="layui-form-item" style="width:200px;">
+        <label class="layui-form-label">课程</label>
+        <div class="layui-input-inline" >
+
+            <select name="sCourse" id="cCname" lay-filter="cCname" >
+                <option value="0 ">请选录入课程</option>
+            </select>
+        </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">分数</label>
+            <div class="layui-input-block">
+                <input type="text" value=""  class="layui-input" id="sScore" name="sScore" style="width:200px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">学分</label>
+            <div class="layui-input-block">
+                <input type="text" value=""  class="layui-input" id="sXuefen" name="sXuefen" style="width:200px;">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit="" lay-filter="changeScore">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
