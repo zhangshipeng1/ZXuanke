@@ -1,5 +1,6 @@
 package com.zsp.UpandDown.controler;
 
+import com.zsp.student.entity.TbUserloginpovo;
 import com.zsp.student.service.StudentService;
 import javafx.scene.chart.PieChart;
 import org.apache.shiro.SecurityUtils;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpSession;
 import javax.xml.crypto.Data;
 import java.io.File;
 import java.io.IOException;
@@ -32,8 +34,10 @@ public class UpLond {
     private StudentService studentService;
     @RequestMapping("/upuserimg.action")
     @ResponseBody
-    public Map<String,Object> handleFormUpload( MultipartFile file) throws IOException {
-System.out.println("ssssup");
+    public Map<String,Object> handleFormUpload(MultipartFile file, HttpSession session ) throws IOException {
+
+        TbUserloginpovo tbUserloginpovo= (TbUserloginpovo) session.getAttribute ("user");
+        String username=tbUserloginpovo.getSlUsername ();
         String filename = file.getOriginalFilename ();
         String uuid= UUID.randomUUID ().toString ().trim ().replace ("-","").toUpperCase ();
 
@@ -52,7 +56,7 @@ System.out.println("ssssup");
         file.transferTo (new File (path1));
         Map<String,Object> map=new HashMap<> ();
         map.put ("srcimg","../../student/getuserimg.action");
-        boolean isup=studentService.updateImg (path1);
+        boolean isup=studentService.updateImg (path1,username);
         if(isup==true){
             map.put ("msge","上传成功");
         }else{

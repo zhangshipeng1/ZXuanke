@@ -27,4 +27,6 @@ public interface CourseMapping {
     List<YiXuan> selectYixuanCourseMap(@Param(value = "xuanSlid") String xuanSlid);
 
     Boolean deleteYiXuan(String data);
+
+    String selectteacherId(String data);
 }

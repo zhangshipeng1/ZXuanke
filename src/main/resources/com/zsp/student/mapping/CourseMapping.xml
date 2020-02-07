@@ -3,9 +3,20 @@
 <mapper namespace="com.zsp.student.mapping.CourseMapping">
     <resultMap id="selectYiXuancourse" type="com.zsp.student.entity.YiXuan">
         <id column="xuan_id" property="xuanId"></id>
+        <result column="xuan_course" property="xuanCourse" ></result>
+        <result column="xuan_slid" property="xuanSlid" ></result>
+        <result column="xuan_tid" property="xuanTid" ></result>
+        <result column="xuan_zhuangtai" property="xuanZhuangtai" ></result>
         <association  property="tbCourse" javaType="com.zsp.student.entity.TbCourse">
             <id column="c_id" property="cId"></id>
             <result column="c_cname" property="cCname"></result>
+            <result column="c_cnumber" property="cCnumber"></result>
+            <result column="c_sort" property="cSort"></result>
+            <result column="c_zhuanye" property="cZhuanye"></result>
+            <result column="c_message" property="cMessage"></result>
+            <result column="c_type" property="cType"></result>
+            <result column="c_xueyuan" property="cXueyuan"></result>
+            <result column="c_grade" property="cGrade"></result>
         </association>
     </resultMap>
   <resultMap id="selectcourseMessage" type="com.zsp.student.entity.CourseMessagePovo">
@@ -55,7 +66,7 @@
        </association>
        <association property="teacherCourse" javaType="com.zsp.student.entity.TeacherCourse">
            <id column="tc_id" property="tcId"></id>
-           <result column="tc_zhuangtai" property="tcZhuangtai"></result>
+    <!--       <result column="tc_zhuangtai" property="tcZhuangtai"></result>-->
        </association>
        <association property="college" javaType="com.zsp.student.entity.College">
            <id column="college_id" property="collegeId"></id>
@@ -73,20 +84,16 @@
        </association>
    </resultMap>
 <sql id="selectCourse" >
-        SELECT tb_course.c_id,tb_teacher.t_id,teacher_course.tc_id,
-        IF(tb_xuanke.xuan_zhuangtai IS NULL,0,tb_xuanke.xuan_zhuangtai) xuan_zhuangtai,
-        tb_xuanke.xuan_slid,tb_xuanke.xuan_course,
-        tb_course.c_cname,tb_teacher.t_name,`time`.time_cart,
-        `time`.time_id,teacher_course.tc_zhuangtai,college.college_name,tb_major.major_name ,
-     teacher_course.tc_renshu xuanke_count FROM
 
-      ( tb_course,tb_teacher,teacher_course,`time`,college,tb_major )
-      LEFT JOIN tb_xuanke ON tb_course.c_id=tb_xuanke.xuan_course
-        WHERE tb_course.c_id=teacher_course.c_id AND teacher_course.t_id=tb_teacher.t_id AND teacher_course.tc_time=time.time_id
-        AND tb_course.c_type!='必修'
-        AND tb_major.major_id=tb_course.c_zhuanye
-        AND college.college_id=tb_course.c_xueyuan
-
+                 SELECT tb_course.c_id,tb_teacher.t_id,teacher_course.tc_id,
+                tb_course.c_cname,tb_teacher.t_name,`time`.time_cart,
+                `time`.time_id,teacher_course.tc_zhuangtai,college.college_name,tb_major.major_name ,
+                teacher_course.tc_renshu xuanke_count FROM
+              tb_course,tb_teacher,teacher_course,`time`,college,tb_major
+                WHERE tb_course.c_id=teacher_course.c_id AND teacher_course.t_id=tb_teacher.t_id AND teacher_course.tc_time=time.time_id
+                AND tb_course.c_type!='必修'
+                AND tb_major.major_id=tb_course.c_zhuanye
+                AND college.college_id=tb_course.c_xueyuan
 </sql>
     <sql id="selectcoursemessage" >
        SELECT distinct  * FROM tb_course,college,tb_major
@@ -139,10 +146,13 @@
 
     </select>
     <select id="selectYixuanCourseMap" resultMap="selectYiXuancourse" parameterType="String">
-        SELECT tb_xuanke.xuan_id,tb_course.c_cname FROM tb_xuanke,tb_course
+        SELECT * FROM tb_xuanke,tb_course
         WHERE tb_xuanke.xuan_course=tb_course.c_id AND xuan_slid =#{xuanSlid}
     </select>
     <delete id="deleteYiXuan" parameterType="string">
-        DELETE FROM tb_xuanke WHERE tb_xuanke.xuan_id=#{xuanId}
+        DELETE FROM tb_xuanke WHERE tb_xuanke.xuan_id=
     </delete>
+    <select id="selectteacherId" parameterType="string" resultType="string">
+        SELECT xuan_tid FROM tb_xuanke WHERE xuan_id =#{data}
+    </select>
 </mapper>

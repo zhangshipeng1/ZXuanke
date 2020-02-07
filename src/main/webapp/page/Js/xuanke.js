@@ -78,13 +78,14 @@ $(function () {
             , {fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
         ]]
         ,done:function (res, curr, count) {
-            alert(res.data[0].tbXuanke.xuanZhuangtai);
+
             //table_data = res.data;
             trNum = count;
             for(var i = 0;i<res.data.length;i++){
-                var state = res.data[i].tbXuanke.xuanZhuangtai;
-                alert(state);
-                if(state != '0'){
+                var state = res.data[i].zhuangtai;
+                var count1 =res.data[i].xuankeCount;
+                alert(count1);
+                if(state != '0' && count1>30){
                     var index = res.data[i]['LAY_TABLE_INDEX'];
                     $(".layui-table tr[data-index="+index+"] input[type='checkbox']").prop('disabled',true);
                     $(".layui-table tr[data-index="+index+"] input[type='checkbox']").next().addClass('layui-btn-disabled');

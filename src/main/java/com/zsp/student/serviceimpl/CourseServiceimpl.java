@@ -60,6 +60,7 @@ public class CourseServiceimpl implements CourseService {
         System.out.println(course+"courseserviceimpl");
         //查询是否存在该课程
         IshasCcoursepovo ishasCcoursepovo=cousermaMapping.selectCourseByid(String.valueOf(tbUserloginpovo.getSlId()),String.valueOf(course.getcId()),String.valueOf(course.getTime().getTimeId()));
+
         if (ishasCcoursepovo==null){
            //查询是否少于30人
          TeacherCourse teacherCourse= cousermaMapping.selectRenshu(String.valueOf(course.getTeacherCourse().getTcId()));
@@ -74,10 +75,13 @@ public class CourseServiceimpl implements CourseService {
              xuanke.setXuanTid(course.getTbTeacher().gettId());
              boolean isxuanke= cousermaMapping.insertXuancourse(xuanke) ;
              //人数加一
+             System.out.println("shifouxuanke"+isxuanke);
              if(isxuanke==true){
                  System.out.println(renshu);
              boolean  isrenshuadd= cousermaMapping.updateReanshu(String.valueOf(renshu+1),course.getTeacherCourse().getTcId());
+                 System.out.println(isrenshuadd);
                  return  isrenshuadd;
+
              }
 
          }else{
@@ -113,16 +117,23 @@ public class CourseServiceimpl implements CourseService {
 
     @Override
     public List<YiXuan> selectYixuancourse(TbUserloginpovo userloginpovo) {
-System.out.println("555555555"+String.valueOf(userloginpovo.getSId()));
+System.out.println("555555555"+String.valueOf(userloginpovo.getSlId()));
                List<YiXuan> yi=cousermaMapping.selectYixuanCourseMap(String.valueOf(userloginpovo.getSlId()));
                System.out.println(yi);
-        return cousermaMapping.selectYixuanCourseMap(String.valueOf(userloginpovo.getSlId()));
+        return yi;
     }
 
     @Override
     public Boolean deleteYiXuan(String data) {
+        String tid= cousermaMapping.selectteacherId(data);
        Boolean bol= cousermaMapping.deleteYiXuan(data);
+        TeacherCourse teacherCourse= cousermaMapping.selectRenshu(tid);
+        long renshu=teacherCourse.getTcRenshu();
+        if(bol==true){
 
+            boolean  isrenshudel= cousermaMapping.updateReanshu(String.valueOf(renshu-1),tid);
+
+        }
         return bol;
     }
 }

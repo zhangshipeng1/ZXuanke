@@ -136,7 +136,7 @@ layui.use(['form','layer','upload','laydate',"address"],function(){
         mark : {"0-12-15":"生日"},
         done: function(value, date){
             if(date.month === 12 && date.date === 15){ //点击每年12月15日，弹出提示语
-                layer.msg('今天是马哥的生日，也是layuicms2.0的发布日，快来送上祝福吧！');
+               // layer.msg('今天是马哥的生日，也是layuicms2.0的发布日，快来送上祝福吧！');
             }
         }
     });

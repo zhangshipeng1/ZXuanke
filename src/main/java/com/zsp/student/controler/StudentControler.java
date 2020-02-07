@@ -1,5 +1,8 @@
 package com.zsp.student.controler;
 
+import cn.hutool.core.codec.Base64;
+import com.arcsoft.face.toolkit.ImageFactory;
+import com.arcsoft.face.toolkit.ImageInfo;
 import com.zsp.student.entity.*;
 import com.zsp.student.service.LoginService;
 import com.zsp.student.service.StudentService;
@@ -9,6 +12,7 @@ import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import util.CodeUtil;
 import util.ImgUtil;
@@ -20,12 +24,12 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
 import java.awt.image.BufferedImage;
 import java.awt.image.RenderedImage;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * @PackageName:com.zsp.student.controler
@@ -42,9 +46,11 @@ public class StudentControler {
     private StudentService studentService;
     @Resource
     private LoginService loginService;
+
+
     @RequestMapping("/dologin.action")
     @ResponseBody
-    public String dologin(@RequestParam(value = "username")  String slUsername , @RequestParam(value = "password") String slPassword, String code, @RequestParam(value = "remberme",defaultValue = "false") Boolean remberme , HttpSession session, Model model, HttpServletRequest request, HttpServletResponse response){
+    public String dologin(@RequestParam(value = "username")  String slUsername , @RequestParam(value = "password") String slPassword, String code, HttpSession session, Model model, HttpServletRequest request, HttpServletResponse response){
          String code1= (String) session.getAttribute ("codedata");
 
         //  String data2= (String) request.getSession ().getAttribute ("codedata");
@@ -52,17 +58,10 @@ public class StudentControler {
         if(code1.equalsIgnoreCase (code)){
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(slUsername,slPassword);
-        if(!token.isRememberMe ()){System.out.println("rem1");
-            if(remberme){
-                System.out.println("rem2");
-                //token.setRememberMe (true);
-            }
-        }
-            System.out.println("rem3");
+
         try{
             //调用subject.login(token)进行登录，会自动委托给securityManager,调用之前
             subject.login(token);//会跳到我们自定义的realm中
-            System.out.println("rem3"+".......");
             return "true";
         }catch(Exception e){
             e.printStackTrace();
@@ -74,6 +73,33 @@ public class StudentControler {
 
             return "验证码错误";
         }
+    }
+
+    @RequestMapping("/facelogin.action")
+    @ResponseBody
+    public String facelogin( String slUsername ,double simaler, HttpSession session, Model model, HttpServletRequest request, HttpServletResponse response){
+        TbUserloginpovo tbUserloginpovo=loginService.userLogin (slUsername);
+        String password=tbUserloginpovo.getPsCopy();
+        System.out.println(password);
+        if(simaler>80){
+            Subject subject = SecurityUtils.getSubject();
+            UsernamePasswordToken token = new UsernamePasswordToken(slUsername,password);
+
+            try{
+                //调用subject.login(token)进行登录，会自动委托给securityManager,调用之前
+                subject.login(token);//会跳到我们自定义的realm中
+
+                return "true";
+            }catch(Exception e){
+                e.printStackTrace();
+
+                //request.setAttribute("error", "用户名或密码错误");
+                return "用户名或密码错误";
+            }
+        }else {
+            return "人脸识别错误";
+        }
+
     }
     //生成验证码
     @RequestMapping("/code.action")
@@ -110,7 +136,7 @@ public class StudentControler {
 * */
 @RequestMapping("/getTree.action")
     @ResponseBody
-    public List<TreeNode> gettree(String username,Integer rId, HttpSession session){
+    public List<TreeNode> gettree(String username, Integer rId, HttpSession session){
 
     username= (String) SecurityUtils.getSubject ().getPrincipal ();
 System.out.println(rId);
@@ -174,22 +200,21 @@ System.out.println(slUsername);
 //不能从session中取值因为请求图片和请求用户在同一时间所以session中值没办法得到。
        TbUserloginpovo tbUserloginpovo= (TbUserloginpovo) session.getAttribute ("user");
        String username=tbUserloginpovo.getSlUsername ();
-       System.out.println("************************"+username);
-       System.out.println(studentService.getuserMessage (username));
+
         return studentService.getuserMessage (username);
 
     }
     @RequestMapping("/updateuserlogMessage.action")
     @ResponseBody
     public boolean upuserlogMessage(UserMessagepovo userMessagepovo){
-    System.out.println(userMessagepovo);
+
     Boolean res=studentService.updateuserMessage (userMessagepovo);
     return res;
     }
     @RequestMapping("/selectcolage.action")
     @ResponseBody
     public List<Collegepovo> selectcolage(){
-    System.out.println(studentService.selectcolage ());
+
         return studentService.selectcolage ();
     }
     @RequestMapping("/selectmajorByid.action")
@@ -200,8 +225,7 @@ System.out.println(slUsername);
     @RequestMapping("/selectclassesByid.action")
     @ResponseBody
     public List<TbClasspovo> selectclassesByid(String majorId){
-    System.out.println("+++++++"+majorId);
-    System.out.println(studentService.selectclassesByid (majorId));
+
 
         return studentService.selectclassesByid (majorId);
     }
@@ -209,8 +233,21 @@ System.out.println(slUsername);
     @ResponseBody
     public List<Roal> selectroal(String slUsername,HttpSession session){
       TbUserloginpovo tbUserloginpovo= (TbUserloginpovo) session.getAttribute ("user");
-        System.out.println(tbUserloginpovo.getSlUsername ()+"userroal");
+
         return studentService.selectroelByusername (tbUserloginpovo.getSlUsername ());
+    }
+    private String base64Process(String base64Str) {
+        if (!StringUtils.isEmpty(base64Str)) {
+            String photoBase64 = base64Str.substring(0, 30).toLowerCase();
+            int indexOf = photoBase64.indexOf("base64,");
+            if (indexOf > 0) {
+                base64Str = base64Str.substring(indexOf + 7);
+            }
+
+            return base64Str;
+        } else {
+            return "";
+        }
     }
     }
 

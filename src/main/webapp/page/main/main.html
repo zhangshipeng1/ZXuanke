@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>主页</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="/images/0.jpg">
+	<link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="../../css/index.css" media="all" />
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="../../layui/layui.js"></script>
+	<!-- <script type="text/javascript" src="/Pingshife/js/main.js"></script> -->
+  </head>
+  
+  <body>
+  <br/>
+  <fieldset class="layui-elem-field layui-field-title">
+      <legend>天气</legend>
+      <div class="layui-field-box" style="height: 100px">
+          <iframe width="400px" scrolling="no" height="70px"  src="//i.tianqi.com/index.php?c=code&id=2&icon=1&num=3&site=12"></iframe>
+
+      </div>
+  </fieldset>
+
+  <fieldset class="layui-elem-field layui-field-title">
+      <legend>声明</legend>
+      <div class="layui-field-box" style="width: 100%;height:auto">
+          <iframe src="shengming.html" width="100%" height="100%"></iframe>
+
+      </div>
+  </fieldset>
+  </body>
+  <script type="text/javascript">
+  
+layui.use(['form','element','layer','jquery','upload'],function(){
+    var form = layui.form
+    ,upload = layui.upload,
+        layer = parent.layer === undefined ? layui.layer : top.layer,
+        element = layui.element;
+        $ = layui.jquery;
+        upload.render({
+    elem: '#test3'
+    ,url: '/Pingshife/PingShiFen/inFromexcile.action'
+    ,accept: 'file' //普通文件
+    ,done: function(res){
+      if(res){
+      layer.msg("导入成功");
+      }
+    }
+  });
+    form.on('submit(Pingshifentijiao)', function(data){
+        var data1=data.field;
+   layer.confirm('确定初始化吗？确定后不可更改！', function(index){
+          $.ajax({
+              type: 'POST',
+              xhrFields: {
+                  withCredentials: true
+              },
+              // 允许跨域
+              crossDomain: true,
+              url: '/Pingshife/PingShiFen/initPingshifen.action?data=' + new Date() + Math.floor(Math.random()*24),
+              async: false,
+             
+              success: function (data) {
+                  if(data){
+                      layer.msg("初始化成功！")
+                 
+                  }else{
+                      layer.msg("初始化失败！")
+                  }
+              }
+          });
+          })
+        return false;
+
+    });
+  
+  })
+  </script>
+</html>

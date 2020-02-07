@@ -21,7 +21,24 @@ public class TbUserlogin implements Serializable {
   private long addId;
   private long tId;
   private long aId;
+  private long faceId;
+  private String psCopy;
 
+  public long getFaceId() {
+    return faceId;
+  }
+
+  public void setFaceId(long faceId) {
+    this.faceId = faceId;
+  }
+
+  public String getPsCopy() {
+    return psCopy;
+  }
+
+  public void setPsCopy(String psCopy) {
+    this.psCopy = psCopy;
+  }
 
   public long getSlId() {
     return slId;

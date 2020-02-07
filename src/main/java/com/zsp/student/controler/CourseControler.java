@@ -50,7 +50,7 @@ public class CourseControler {
      */
     @RequestMapping(value = "/getallCourse.action", produces = "application/json; charset=utf-8")
     @ResponseBody
-    public String selectcourse(HttpServletResponse response, Integer page ,Integer limit ,String key,String slXueyuan,String slZhuanye){
+    public String selectcourse(HttpServletResponse response, Integer page ,Integer limit ,String key,String slXueyuan,String slZhuanye,HttpSession session){
         List<Coursespovo> coursespovos=null;
 
         response.setContentType ("application/json;charset=UTF-8");
@@ -66,17 +66,46 @@ public class CourseControler {
             coursespovos=  courseService.getCourse ();
 
         }
-        for (Coursespovo coursespovo: coursespovos
-             ) {
-            System.out.println("ssssssssssssss"+coursespovo.toString());
+        //选课状态操作
+        TbUserloginpovo userloginpovo=(TbUserloginpovo) session.getAttribute("user");
+        List <YiXuan> yiXuans=courseService.selectYixuancourse(userloginpovo);
+        Iterator iterator=yiXuans.iterator();
+        boolean ishave=false;
+       while (iterator.hasNext()){
+           System.out.println("wwwwww");
+           YiXuan yiXuan= (YiXuan) iterator.next();
+           System.out.println("yixian"+yiXuan);
+           Integer cousid=yiXuan.getXuanCourse();
+     Iterator<Coursespovo> iter= coursespovos.iterator();
+
+    while (iter.hasNext()){
+
+        Coursespovo coursespovo =iter.next();
+        System.out.println(coursespovo);
+        System.out.println(cousid);
+        System.out.println(coursespovo.getcId());
+        if(coursespovo.getcId()==cousid){
+            coursespovo.setZhuangtai(1);
+            ishave=true;
+            System.out.println("breakbuhaoshi");
+            break;
         }
+        else{
+            coursespovo.setZhuangtai(0);
+            break ;
+        }
+    }
+        if (ishave){
+            break;
+        }
+       }
 
 
         PageInfo info=new PageInfo (coursespovos);
         JSONObject obj=new JSONObject();
         obj.put("code", 0);
         obj.put("msg", "");
-        obj.put("count",info.getPages ());
+        obj.put("count",info.getTotal());
         obj.put("data",coursespovos);
         return obj.toJSONString();
 
@@ -96,6 +125,7 @@ public class CourseControler {
         response.setContentType ("application/json;charset=UTF-8");
         boolean flag=false;
         if(coursespovo!=null){
+            System.out.println("jssssssssssssssssakkkkkkk");
             TbUserloginpovo userloginpovo=(TbUserloginpovo) session.getAttribute("user");
             flag=courseService.insertXuankes(coursespovo,userloginpovo);
         }
@@ -160,7 +190,7 @@ public class CourseControler {
         JSONObject obj=new JSONObject();
         obj.put("code", 0);
         obj.put("msg", "");
-        obj.put("count",info.getPages ());
+        obj.put("count",info.getTotal());
         obj.put("data",courseMessagePovos);
         return obj.toJSONString();
 

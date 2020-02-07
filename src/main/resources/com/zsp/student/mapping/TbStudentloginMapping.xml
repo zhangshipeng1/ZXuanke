@@ -16,6 +16,8 @@
        <result column="sl_email" property="slEmail"></result>
        <result column="sl_pingjia" property="slPingjia"></result>
        <result column="add_id" property="addId"></result>
+       <result column="face_id" property="faceId"></result>
+       <result column="ps_copy" property="psCopy"></result>
 
       <association property="roal" javaType="com.zsp.student.entity.Roal">
           <id column="r_id" property="rId"></id>
@@ -57,7 +59,7 @@
         select *from tb_userlogin where sl_username=#{slUsername}
     </select>
     <update id="updateUserimg" parameterType="java.lang.String">
-        update  tb_userlogin set sl_img=#{slImg}
+        update  tb_userlogin set sl_img=#{slImg} WHERE tb_userlogin.sl_username=#{username}
     </update>
     <select id="selectusermessage" parameterType="java.lang.String" resultMap="selectuserMessage">
         SELECT *FROM tb_userlogin,roal,tb_student,role_userlogin

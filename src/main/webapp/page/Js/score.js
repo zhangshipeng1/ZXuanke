@@ -39,16 +39,18 @@ layui.use(['table','jquery','form','element'], function(){
 
             );
             //个人成绩
+            $("#d4").html("");
             $.ajax({
                     async:false,
                     cache:false,
                     url:"../../Score/getgerenScore.action",
                     type:'post',
                     success:function (res) {
+
                         for (var i=0;i<res.length;i++) {
 
                             var htmladd="<tr align='center'><td>"+res[i].tbStudent.snumber+"</td><td>"+res[i].tbCourse.cCname+"</td><td>"+res[i].sscore+"</td><td>"+res[i].sxuefen+"</td></tr>";
-                            $(".d3").append(htmladd);
+                            $("#d4").append(htmladd);
                         }
                     }
                 }
@@ -73,7 +75,7 @@ layui.use(['table','jquery','form','element'], function(){
             );
         }
         function getdabang(){
-
+            $("select[name=cXueyuan]").html("");
             $.ajax({
                 async:false,
                 cache:false,
@@ -116,6 +118,7 @@ layui.use(['table','jquery','form','element'], function(){
 
                 }
             });
+            $("#yiXuan").html("");
             $.ajax({
                 async: false,
                 cache: false,
@@ -140,7 +143,7 @@ layui.use(['table','jquery','form','element'], function(){
                 ,toolbar:"#score"
                 ,defaultToolbar: ['filter', 'print', 'exports']
                 ,cellMinWidth:100
-                ,limit:1
+                ,limit:5
                 ,autoSort:true
                 ,limits : [5,10,25,50,100,1000]
                 ,url: '../../Score/selectAllscore.action' //数据接口

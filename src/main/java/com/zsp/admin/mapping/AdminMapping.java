@@ -1,7 +1,7 @@
 package com.zsp.admin.mapping;
 
-import com.zsp.admin.entity.TbAdministratorloginpovo;
+import com.zsp.admin.entity.TbAdministrator;
 
 public interface AdminMapping {
-    public TbAdministratorloginpovo selectAdminByUsername(String alUsername);
+    public TbAdministrator selectAdminByUsername(String alUsername);
 }

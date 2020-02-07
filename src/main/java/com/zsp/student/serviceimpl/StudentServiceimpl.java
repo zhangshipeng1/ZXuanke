@@ -39,8 +39,8 @@ public class StudentServiceimpl implements StudentService {
     }
 
     @Override
-    public boolean updateImg(String img) {
-        return tbStudentloginMapping.updateUserimg (img);
+    public boolean updateImg(String img,String username) {
+        return tbStudentloginMapping.updateUserimg (img,username);
     }
 
     @Override

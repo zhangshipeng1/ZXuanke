@@ -2,6 +2,12 @@ layui.use(['form','layer','jquery'],function(){
     var form = layui.form,
         layer = parent.layer === undefined ? layui.layer : top.layer
         $ = layui.jquery;
+    var html="   <form class=\"layui-form\" action=\"\">  " +
+        " <div class=\"layui-inline\">\n" +
+        "                        <input class=\"layui-input\" name=\"cCnumber\" id=\"selectName\" autocomplete=\"off\">\n" +
+        "                    </div> " +
+
+        "</form>"
     $(function () {
         $.ajax({
             async:false,

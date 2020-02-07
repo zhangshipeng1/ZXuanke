@@ -17,6 +17,15 @@ public class Coursespovo extends TbCourse {
     private String key;
     private TbXuanke tbXuanke;
     private Integer xuankeCount;
+    private  Integer zhuangtai=0;
+
+    public Integer getZhuangtai() {
+        return zhuangtai;
+    }
+
+    public void setZhuangtai(Integer zhuangtai) {
+        this.zhuangtai = zhuangtai;
+    }
 
     public TbCourse getTbCourse() {
         return tbCourse;
@@ -29,7 +38,7 @@ public class Coursespovo extends TbCourse {
     public Coursespovo() {
     }
 
-    public Coursespovo(TbCourse tbCourse, Time time, TbMajor tbMajor, TbTeacher tbTeacher, College college, TeacherCourse teacherCourse, String key, TbXuanke tbXuanke, Integer xuankeCount) {
+    public Coursespovo(TbCourse tbCourse, Time time, TbMajor tbMajor, TbTeacher tbTeacher, College college, TeacherCourse teacherCourse, String key, TbXuanke tbXuanke, Integer xuankeCount, Integer zhuangtai) {
         this.tbCourse = tbCourse;
         this.time = time;
         this.tbMajor = tbMajor;
@@ -39,6 +48,21 @@ public class Coursespovo extends TbCourse {
         this.key = key;
         this.tbXuanke = tbXuanke;
         this.xuankeCount = xuankeCount;
+        this.zhuangtai = zhuangtai;
+    }
+
+    public Coursespovo(long cId, String cCnumber, String cCname, String cSort, String cZhuanye, String cMessage, String cType, String cXueyuan, String cGrade, TbCourse tbCourse, Time time, TbMajor tbMajor, TbTeacher tbTeacher, College college, TeacherCourse teacherCourse, String key, TbXuanke tbXuanke, Integer xuankeCount, Integer zhuangtai) {
+        super(cId, cCnumber, cCname, cSort, cZhuanye, cMessage, cType, cXueyuan, cGrade);
+        this.tbCourse = tbCourse;
+        this.time = time;
+        this.tbMajor = tbMajor;
+        this.tbTeacher = tbTeacher;
+        this.college = college;
+        this.teacherCourse = teacherCourse;
+        this.key = key;
+        this.tbXuanke = tbXuanke;
+        this.xuankeCount = xuankeCount;
+        this.zhuangtai = zhuangtai;
     }
 
     public Time getTime() {

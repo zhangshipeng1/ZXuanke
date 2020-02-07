@@ -11,7 +11,12 @@
     <script type="text/javascript" src="../../js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="../../layui/layui.js"></script>
     <script src="js/register.js"></script>
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" media="all" />
+    <script type="text/javascript" src="../../layui/layui.js"></script>
 
+    <script src="../Js/regist.js"></script>
+    <script type="text/javascript" src="../../js/cacheUserInfo.js"></script>
 </head>
 <body class="bgf4">
 <div class="login-box f-mt10 f-pb50">
@@ -42,7 +47,7 @@
                     <div class="item col-xs-12">
                         <span class="intelligent-label f-fl"><b class="ftx04">*</b>用户名：</span>    
                         <div class="f-fl item-ifo">
-                            <input type="text" maxlength="20" class="txt03 f-r3 required" tabindex="1" data-valid="isNonEmpty||between:3-20||isUname" data-error="用户名不能为空||用户名长度3-20位||只能输入中文、字母、数字、下划线，且以中文或字母开头" id="adminNo" />                            <span class="ie8 icon-close close hide"></span>
+                            <input type="text" maxlength="20" onblur="isHasUser()" id="Useranme" class="txt03 f-r3 required" tabindex="1" data-valid="isNonEmpty||between:3-20||isUname" data-error="用户名不能为空||用户名长度3-20位||只能输入中文、字母、数字、下划线，且以中文或字母开头" id="adminNo" />                            <span class="ie8 icon-close close hide"></span>
                             <label class="icon-sucessfill blank hide"></label>
                             <label class="focus"><span>3-20位，中文、字母、数字、下划线的组合，以中文或字母开头</span></label>
                             <label class="focus valid"></label>
@@ -74,6 +79,7 @@
                             </label>    
                         </div>
                     </div>
+
                     <div class="item col-xs-12">
                         <span class="intelligent-label f-fl"><b class="ftx04">*</b>确认密码：</span>    
                         <div class="f-fl item-ifo">
@@ -83,6 +89,16 @@
                             <label class="icon-sucessfill blank hide"></label>
                             <label class="focus">请再输入一遍上面的密码</label> 
                             <label class="focus valid"></label>                          
+                        </div>
+                    </div>
+                    <div class="item col-xs-12">
+                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>工号/学号：</span>
+                        <div class="f-fl item-ifo">
+                            <input type="text" id="ID" onblur="victornumber()" maxlength="20" class="txt03 f-r3 required" tabindex="3" style="ime-mode:disabled;" onpaste="return  false" autocomplete="off" data-valid="isNonEmpty" data-error="学号/工号不能为空"/>
+
+                            <label id="lab"></label>
+
+
                         </div>
                     </div>
                     <div class="item col-xs-12">
@@ -112,55 +128,51 @@
                         </div>
                     </div> 
                 </div>
-                <div class="part2" style="display:none">
-                	<div class="alert alert-info" style="width:700px">短信已发送至您手机，请输入短信中的验证码，确保您的手机号真实有效。</div>                    
-                    <div class="item col-xs-12 f-mb10" style="height:auto">
-                        <span class="intelligent-label f-fl">手机号：</span>    
-                        <div class="f-fl item-ifo c-blue">
-                            15824450934
+                <div class="part2" style="display:none;width: 1000px">
+                	<div class="alert alert-info" style="width:700px">请进行人脸注测此次操作将成为人脸登录凭证。</div>
+                   <div id="mainDiv" style="margin-left:100px; width: 400px"></div>
+                    <div class="item col-xs-12">
+                        <span class="intelligent-label f-fl">&nbsp;</span>
+                        <div class="f-fl item-ifo">
+                            <a href="javascript:;"  onclick="getMedia()" class="btn btn-blue f-r3" id="openphoto">打开摄像头</a>
                         </div>
                     </div>
                     <div class="item col-xs-12">
-                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>验证码：</span>    
+                        <span class="intelligent-label f-fl">&nbsp;</span>
                         <div class="f-fl item-ifo">
-                            <input type="text" maxlength="6" id="verifyNo" class="txt03 f-r3 f-fl required" tabindex="4" style="width:167px" data-valid="isNonEmpty||isInt" data-error="验证码不能为空||请输入6位数字验证码" /> 
-                           	<span class="btn btn-gray f-r3 f-ml5 f-size13" id="time_box" disabled style="width:97px;display:none;">发送验证码</span>
-                            <span class="btn btn-gray f-r3 f-ml5 f-size13" id="verifyYz" style="width:97px;">发送验证码</span>
-                            <span class="ie8 icon-close close hide" style="right:130px"></span>
-                            <label class="icon-sucessfill blank hide"></label>
-                            <label class="focus"><span>请查收手机短信，并填写短信中的验证码（此验证码3分钟内有效）</span></label>   
-                            <label class="focus valid"></label>                        
+                           <a href="javascript:;" onclick="takePhoto()" class="btn btn-blue f-r3" id="btn_part2">注册</a>
                         </div>
                     </div>
-                    <div class="item col-xs-12">
-                        <span class="intelligent-label f-fl">&nbsp;</span>    
-                        <div class="f-fl item-ifo">
-                           <a href="javascript:;" class="btn btn-blue f-r3" id="btn_part2">注册</a>                         
-                        </div>
-                    </div> 
                 </div>
                 <div class="part3" style="display:none">
                 	<div class="item col-xs-12">
-                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>真实姓名：</span>    
+                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>Email：</span>
                         <div class="f-fl item-ifo">
-                            <input type="text" maxlength="10" class="txt03 f-r3 required" tabindex="1" data-valid="isNonEmpty||between:2-10||isZh" data-error="真实姓名不能为空||真实姓名长度2-10位||只能输入中文" id="adminNo" />   
-                            <span class="ie8 icon-close close hide"></span>                         
-                            <label class="icon-sucessfill blank hide"></label>
-                            <label class="focus">2-10位，中文真实姓名</label>
-                            <label class="focus valid"></label>
+                            <input type="email" maxlength="50" id="email" class="txt03 f-r3 required" tabindex="1"  />
+
                         </div>
                     </div>
+
                     <div class="item col-xs-12">
-                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>身份证号：</span>    
-                        <div class="f-fl item-ifo">
-                            <input type="text" class="txt03 f-r3 required" tabindex="2" data-valid="isNonEmpty||isCard" data-error="身份证号不能为空||身份证号码格式不正确" maxlength="18" id="phone" />    
-                            <span class="ie8 icon-close close hide"></span>                        
-                            <label class="icon-sucessfill blank hide"></label>
-                            <label class="focus">请填写18位有效的手机号码</label>
-                            <label class="focus valid"></label>
-                        </div>
-                    </div>
-                    <div class="item col-xs-12">
+                        <form class="layui-form layui-row">
+                            <label class="layui-form-label">请选专业信息</label>
+                            <div class="layui-input-inline">
+
+                                <select name="slXueyuan" id="slXueyuan" lay-filter="slXueyuan">
+                                    <option value="0 ">学院</option>
+                                </select>
+                            </div>
+                            <div class="layui-input-inline">
+                                <select name="slZhuanye" id="slZhuanye" lay-filter="slZhuanye" disabled>
+                                    <option value="0">专业</option>
+                                </select>
+                            </div>
+                            <div class="layui-input-inline">
+                                <select name="slClass"  id="slClass" lay-filter="slClass" disabled>
+                                    <option value="0">班级</option>
+                                </select>
+                            </div>
+                        </form>
                         <span class="intelligent-label f-fl">&nbsp;</span>    
                         <div class="f-fl item-ifo">
                            <a href="javascript:;" class="btn btn-blue f-r3" id="btn_part3">下一步</a>                         
@@ -168,7 +180,7 @@
                     </div>
                 </div>  
                 <div class="part4 text-center" style="display:none">
-                	<h3>恭喜cz82465，您已注册成功，现在开始您的投资之旅吧！</h3>
+                	<h3>恭喜，您已注册成功，现在开始您的投资之旅吧！</h3>
                     <p class="c-666 f-mt30 f-mb50">页面将在 <strong id="times" class="f-size18">10</strong> 秒钟后，跳转到 <a href="http://www.17sucai.com/" class="c-blue">用户中心</a></p>
                 </div>          
             </div>
@@ -185,69 +197,6 @@
     </div>
     <center><a class="btn btn-blue btn-lg f-size12 b-b0 b-l0 b-t0 b-r0 f-pl50 f-pr50 f-r3" href="javascript:closeClause();">已阅读并同意此条款</a></center>
 </div>-->
-<script>
-    function recode() {
-
-        $("#img").attr("src","../../student/code.action?data=" + new Date() + Math.floor(Math.random()*24));
-
-    }
-$(function(){	
-	//第一页的确定按钮
-	$("#btn_part1").click(function(){						
-		if(!verifyCheck._click()) return;
-		$(".part1").hide();
-		$(".part2").show();
-		$(".step li").eq(1).addClass("on");
-	});
-	//第二页的确定按钮
-	$("#btn_part2").click(function(){			
-		if(!verifyCheck._click()) return;
-		$(".part2").hide();
-		$(".part3").show();	
-	});	
-	//第三页的确定按钮
-	$("#btn_part3").click(function(){			
-		if(!verifyCheck._click()) return;
-		$(".part3").hide();
-		$(".part4").show();
-		$(".step li").eq(2).addClass("on");
-		countdown({
-			maxTime:10,
-			ing:function(c){
-				$("#times").text(c);
-			},
-			after:function(){
-				window.location.href="login.html";
-			}
-		});		
-	});	
-});
-function showoutc(){/*$(".m-sPopBg,.m-sPopCon").show();*/
-    layui.use(['layer', 'form'], function(){
-        var layer = layui.layer
-            ,form = layui.form;
-        layer.open({
-            type: 1
-            ,title:"服务条款" //不显示标题栏
-            ,closeBtn: false
-            ,area: '300px;'
-            ,shade: 0.8
-            ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
-            ,resize: false
-            ,btn: ['已阅读并同意此条款']
-            ,btnAlign: 'c'
-            ,moveType: 1 //拖拽模式，0或者1
-            ,content: '<div style="padding: 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">内容<br>内容</div>'
-
-        });
-
-    });
-
-}
-function closeClause(){
-	$(".m-sPopBg,.m-sPopCon").hide();		
-}
-</script>
 <div style="text-align:center;">
 <p>选课系统</p>
 </div>

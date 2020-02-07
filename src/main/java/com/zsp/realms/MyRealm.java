@@ -36,7 +36,7 @@ public class MyRealm extends AuthorizingRealm {
         String username=token1.getUsername ();
         AuthenticationInfo info=null;
         TbUserloginpovo tbUserloginpovo=loginService.userLogin (username);
-        ByteSource salt=ByteSource.Util.bytes(tbUserloginpovo.getSlUsername ()+tbUserloginpovo.getSlId ());
+        ByteSource salt=ByteSource.Util.bytes(tbUserloginpovo.getSlUsername ());
         SecurityUtils.getSubject ().getSession ().setAttribute ("user",tbUserloginpovo);
         SimpleHash sh=new SimpleHash("MD5", token1.getPassword (), salt, 1024);
         if(tbUserloginpovo!=null && token1.getPassword ()!=null && tbUserloginpovo.getSlPassword ().toString ().equals (sh.toString ())){
@@ -49,9 +49,9 @@ public class MyRealm extends AuthorizingRealm {
 //产生加密的值
     public static void main(String[] args) {
 
-        ByteSource salt=ByteSource.Util.bytes("2"+"1002");
+        ByteSource salt=ByteSource.Util.bytes("2");
 
         SimpleHash sh=new SimpleHash("MD5", "1", salt, 1024);
-        System.out.println(sh);
+        System.out.println(sh.toString());
     }
 }

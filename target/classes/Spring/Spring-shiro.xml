@@ -28,16 +28,16 @@
         <property name="realm" ref="Loginrealm"/>
     </bean>
     <!--//Remberme-->
-    <bean id="rememberMeCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+ <!--   <bean id="rememberMeCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
         <constructor-arg value="rememberMe" />
         <property name="httpOnly" value="true" />
-        <!-- 默认记住7天（单位：秒） -->
+        &lt;!&ndash; 默认记住7天（单位：秒） &ndash;&gt;
         <property name="maxAge" value="600" />
-    </bean>
+    </bean>-->
     <!-- rememberMe管理器 -->
     <bean id="rememberMeManager" class="org.apache.shiro.web.mgt.CookieRememberMeManager">
         <property name="cipherKey" value="#{T(org.apache.shiro.codec.Base64).decode('4AvVhmFLUs0KTA3Kprsdag==')}" />
-        <property name="cookie" ref="rememberMeCookie" />
+    <!--    <property name="cookie" ref="rememberMeCookie" />-->
     </bean>
  <bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
   <!-- session的失效时长，单位毫秒 -->
@@ -107,7 +107,7 @@
         <property name="securityManager" ref="securityManager"/>
         <property name="loginUrl" value="/page/login/login.html"/>
         <property name="successUrl" value="/page/login/role.html"/>
-        <property name="unauthorizedUrl" value="/unauthorized.jsp"/><!-- 没有权限的页面 -->
+        <property name="unauthorizedUrl" value="/page/unauthorized.jsp"/><!-- 没有权限的页面 -->
         <!-- The 'filters' property is not necessary since any declared javax.servlet.Filter bean
              defined will be automatically acquired and available via its beanName in chain
              definitions, but you can perform overrides or parent/child consolidated configuration
@@ -119,7 +119,20 @@
         </property> -->
         <property name="filterChainDefinitions">
             <value>
+                /page/Js/**=anon
+                /regist/delregistuserface.action=anon
 
+                /faceAdd.action=anon
+                /regist/registuser.action=anon
+                /student/selectclassesByid.action=anon
+                /student/selectmajorByid.action=anon
+                /student/selectcolage.action=anon
+                /regist/selectCode.action=anon
+                /regist/selectId.action=anon
+                /regist/getisHasUserName.action=anon
+                /student/facelogin.action=anon
+                /faceSearch.action=anon
+                /page/login/RenLianLogIn.html=anon
                 /images/*=anon
                 /page/login/login.html = anon
                 /login_bg.jpg=anon
@@ -130,7 +143,7 @@
                 /verify/**=anon
                /page/login/login.js=anon
              	/css/**=anon
-
+                /page/studentpage/video.html= authc<!--登录之后才有的权限-->
              	/js/**=anon
              	/json/**=anon
                 /layui/**=anon
