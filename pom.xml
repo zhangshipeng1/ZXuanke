@@ -18,7 +18,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.verson>4.12</junit.verson>
     <servlet.verson>5.0-1</servlet.verson>
-    <spring.verson>4.3.8.RELEASE</spring.verson>
+    <spring.verson>5.3.18</spring.verson>
     <jsp.version>2.1</jsp.version>
     <jstl.version>1.2.4</jstl.version>
     <jackson.version>2.5.3</jackson.version>
